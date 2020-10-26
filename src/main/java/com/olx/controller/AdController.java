@@ -55,7 +55,7 @@ public class AdController {
         return adModelAssembler.toModel(adService.getAd(id));
         }
 
-        @GetMapping("/ads")
+        @GetMapping("/")
         public CollectionModel<EntityModel<MiniAdDto>> all () {
 
            return adModelAssembler.toCollectionModel(adService.getHomeAds());
