@@ -1,0 +1,1347 @@
+[
+  {
+    "category_id": 3,
+    "name": "Computers - Accessories",
+    "parent": 20
+  },
+  {
+    "category_id": 5,
+    "name": "Movies - Music",
+    "parent": 230
+  },
+  {
+    "category_id": 6,
+    "name": "Home Furniture - Decor",
+    "parent": 0
+  },
+  {
+    "category_id": 7,
+    "name": "Sports Equipment",
+    "parent": 230
+  },
+  {
+    "category_id": 9,
+    "name": "Mobile Phones",
+    "parent": 147
+  },
+  {
+    "category_id": 10,
+    "name": "Video games - Consoles",
+    "parent": 20
+  },
+  {
+    "category_id": 11,
+    "name": "Cameras - Imaging",
+    "parent": 20
+  },
+  {
+    "category_id": 12,
+    "name": "Books",
+    "parent": 230
+  },
+  {
+    "category_id": 14,
+    "name": "Pets - Accessories",
+    "parent": 0
+  },
+  {
+    "category_id": 15,
+    "name": "Toys",
+    "parent": 223
+  },
+  {
+    "category_id": 16,
+    "name": "Boats - Watercraft",
+    "parent": 129
+  },
+  {
+    "category_id": 17,
+    "name": "Business - Industrial - Agriculture",
+    "parent": 0
+  },
+  {
+    "category_id": 18,
+    "name": "Cribs - Strollers - Carriers",
+    "parent": 223
+  },
+  {
+    "category_id": 19,
+    "name": "Tickets - Vouchers",
+    "parent": 230
+  },
+  {
+    "category_id": 20,
+    "name": "Electronics & Home Appliances",
+    "parent": 0
+  },
+  {
+    "category_id": 21,
+    "name": "Musical Instruments",
+    "parent": 230
+  },
+  {
+    "category_id": 22,
+    "name": "Motorcycles & Accessories",
+    "parent": 129
+  },
+  {
+    "category_id": 23,
+    "name": "Cars for Sale",
+    "parent": 129
+  },
+  {
+    "category_id": 26,
+    "name": "Honda",
+    "parent": 23
+  },
+  {
+    "category_id": 28,
+    "name": "MINI",
+    "parent": 23
+  },
+  {
+    "category_id": 29,
+    "name": "Chevrolet",
+    "parent": 23
+  },
+  {
+    "category_id": 30,
+    "name": "Porsche",
+    "parent": 23
+  },
+  {
+    "category_id": 33,
+    "name": "Mercedes-Benz",
+    "parent": 23
+  },
+  {
+    "category_id": 34,
+    "name": "Jaguar",
+    "parent": 23
+  },
+  {
+    "category_id": 35,
+    "name": "Volkswagen",
+    "parent": 23
+  },
+  {
+    "category_id": 36,
+    "name": "Suzuki",
+    "parent": 23
+  },
+  {
+    "category_id": 38,
+    "name": "Alfa Romeo",
+    "parent": 23
+  },
+  {
+    "category_id": 40,
+    "name": "Lada",
+    "parent": 23
+  },
+  {
+    "category_id": 42,
+    "name": "Isuzu",
+    "parent": 23
+  },
+  {
+    "category_id": 45,
+    "name": "Hyundai",
+    "parent": 23
+  },
+  {
+    "category_id": 46,
+    "name": "Other make",
+    "parent": 23
+  },
+  {
+    "category_id": 47,
+    "name": "Ford",
+    "parent": 23
+  },
+  {
+    "category_id": 48,
+    "name": "Mazda",
+    "parent": 23
+  },
+  {
+    "category_id": 53,
+    "name": "Kia",
+    "parent": 23
+  },
+  {
+    "category_id": 54,
+    "name": "Tyres, Batteries, Oils, & Accessories",
+    "parent": 129
+  },
+  {
+    "category_id": 55,
+    "name": "Peugeot",
+    "parent": 23
+  },
+  {
+    "category_id": 56,
+    "name": "Ssang Yong",
+    "parent": 23
+  },
+  {
+    "category_id": 57,
+    "name": "BMW",
+    "parent": 23
+  },
+  {
+    "category_id": 58,
+    "name": "Fiat",
+    "parent": 23
+  },
+  {
+    "category_id": 59,
+    "name": "Dodge",
+    "parent": 23
+  },
+  {
+    "category_id": 63,
+    "name": "Renault",
+    "parent": 23
+  },
+  {
+    "category_id": 64,
+    "name": "Jeep",
+    "parent": 23
+  },
+  {
+    "category_id": 65,
+    "name": "Toyota",
+    "parent": 23
+  },
+  {
+    "category_id": 66,
+    "name": "Nissan",
+    "parent": 23
+  },
+  {
+    "category_id": 68,
+    "name": "Daihatsu",
+    "parent": 23
+  },
+  {
+    "category_id": 69,
+    "name": "Volvo",
+    "parent": 23
+  },
+  {
+    "category_id": 72,
+    "name": "Chrysler",
+    "parent": 23
+  },
+  {
+    "category_id": 73,
+    "name": "Citroen",
+    "parent": 23
+  },
+  {
+    "category_id": 76,
+    "name": "Mitsubishi",
+    "parent": 23
+  },
+  {
+    "category_id": 77,
+    "name": "Land Rover",
+    "parent": 23
+  },
+  {
+    "category_id": 79,
+    "name": "Hummer",
+    "parent": 23
+  },
+  {
+    "category_id": 81,
+    "name": "Skoda",
+    "parent": 23
+  },
+  {
+    "category_id": 83,
+    "name": "Proton",
+    "parent": 23
+  },
+  {
+    "category_id": 84,
+    "name": "Daewoo",
+    "parent": 23
+  },
+  {
+    "category_id": 85,
+    "name": "Seat",
+    "parent": 23
+  },
+  {
+    "category_id": 86,
+    "name": "Subaru",
+    "parent": 23
+  },
+  {
+    "category_id": 87,
+    "name": "Speranza",
+    "parent": 23
+  },
+  {
+    "category_id": 92,
+    "name": "Opel",
+    "parent": 23
+  },
+  {
+    "category_id": 93,
+    "name": "Audi",
+    "parent": 23
+  },
+  {
+    "category_id": 95,
+    "name": "Apartments & Duplex for Sale",
+    "parent": 138
+  },
+  {
+    "category_id": 97,
+    "name": "Villas For Sale",
+    "parent": 138
+  },
+  {
+    "category_id": 98,
+    "name": "Buildings & Lands",
+    "parent": 138
+  },
+  {
+    "category_id": 99,
+    "name": "Commercial for Sale",
+    "parent": 138
+  },
+  {
+    "category_id": 100,
+    "name": "Jobs",
+    "parent": 0
+  },
+  {
+    "category_id": 101,
+    "name": "Management & Consulting",
+    "parent": 100
+  },
+  {
+    "category_id": 103,
+    "name": "Medical, Healthcare, & Nursing",
+    "parent": 100
+  },
+  {
+    "category_id": 105,
+    "name": "Marketing and Public Relations",
+    "parent": 100
+  },
+  {
+    "category_id": 108,
+    "name": "Engineering",
+    "parent": 100
+  },
+  {
+    "category_id": 109,
+    "name": "HR",
+    "parent": 100
+  },
+  {
+    "category_id": 110,
+    "name": "Sales",
+    "parent": 100
+  },
+  {
+    "category_id": 111,
+    "name": "Other Job",
+    "parent": 100
+  },
+  {
+    "category_id": 112,
+    "name": "Accounting, Finance & Banking",
+    "parent": 100
+  },
+  {
+    "category_id": 117,
+    "name": "Tourism, Travel & Hospitality",
+    "parent": 100
+  },
+  {
+    "category_id": 118,
+    "name": "Education",
+    "parent": 100
+  },
+  {
+    "category_id": 119,
+    "name": "Designers",
+    "parent": 100
+  },
+  {
+    "category_id": 120,
+    "name": "Secretarial",
+    "parent": 100
+  },
+  {
+    "category_id": 121,
+    "name": "IT - Telecom",
+    "parent": 100
+  },
+  {
+    "category_id": 124,
+    "name": "Commercial for Rent",
+    "parent": 138
+  },
+  {
+    "category_id": 125,
+    "name": "Villas For Rent",
+    "parent": 138
+  },
+  {
+    "category_id": 126,
+    "name": "Apartments & Duplex for Rent",
+    "parent": 138
+  },
+  {
+    "category_id": 129,
+    "name": "Vehicles",
+    "parent": 0
+  },
+  {
+    "category_id": 130,
+    "name": "Heavy Trucks, Buses & Other Vehicles",
+    "parent": 129
+  },
+  {
+    "category_id": 132,
+    "name": "Brilliance",
+    "parent": 23
+  },
+  {
+    "category_id": 133,
+    "name": "BYD",
+    "parent": 23
+  },
+  {
+    "category_id": 134,
+    "name": "Chery",
+    "parent": 23
+  },
+  {
+    "category_id": 135,
+    "name": "Geely",
+    "parent": 23
+  },
+  {
+    "category_id": 136,
+    "name": "MG",
+    "parent": 23
+  },
+  {
+    "category_id": 137,
+    "name": "Saipa",
+    "parent": 23
+  },
+  {
+    "category_id": 138,
+    "name": "Properties",
+    "parent": 0
+  },
+  {
+    "category_id": 139,
+    "name": "Vacation Homes for Rent",
+    "parent": 138
+  },
+  {
+    "category_id": 144,
+    "name": "Vacation Homes for Sale",
+    "parent": 138
+  },
+  {
+    "category_id": 147,
+    "name": "Mobile Phones, Tablets, & Accessories",
+    "parent": 0
+  },
+  {
+    "category_id": 148,
+    "name": "Mobile & Tablet Accessories",
+    "parent": 147
+  },
+  {
+    "category_id": 154,
+    "name": "TV - Audio - Video",
+    "parent": 20
+  },
+  {
+    "category_id": 155,
+    "name": "Televisions",
+    "parent": 154
+  },
+  {
+    "category_id": 156,
+    "name": "DVD - Home Theater",
+    "parent": 154
+  },
+  {
+    "category_id": 157,
+    "name": "Home Audio",
+    "parent": 154
+  },
+  {
+    "category_id": 158,
+    "name": "Mp3 Players - Portable audio",
+    "parent": 154
+  },
+  {
+    "category_id": 159,
+    "name": "Satellite TV receivers",
+    "parent": 154
+  },
+  {
+    "category_id": 161,
+    "name": "Home Appliances",
+    "parent": 20
+  },
+  {
+    "category_id": 162,
+    "name": "Air conditioners & Fans",
+    "parent": 161
+  },
+  {
+    "category_id": 163,
+    "name": "Other Home Appliances",
+    "parent": 161
+  },
+  {
+    "category_id": 165,
+    "name": "Dishwashers",
+    "parent": 161
+  },
+  {
+    "category_id": 166,
+    "name": "Ovens - Microwaves",
+    "parent": 161
+  },
+  {
+    "category_id": 167,
+    "name": "Cooking Tools",
+    "parent": 161
+  },
+  {
+    "category_id": 168,
+    "name": "Refrigerators - Freezers",
+    "parent": 161
+  },
+  {
+    "category_id": 169,
+    "name": "Washers - Dryers",
+    "parent": 161
+  },
+  {
+    "category_id": 170,
+    "name": "Water Coolers & Kettles",
+    "parent": 161
+  },
+  {
+    "category_id": 171,
+    "name": "Cleaning Appliances",
+    "parent": 161
+  },
+  {
+    "category_id": 173,
+    "name": "Heaters",
+    "parent": 161
+  },
+  {
+    "category_id": 174,
+    "name": "Computer Accessories & Spare Parts",
+    "parent": 3
+  },
+  {
+    "category_id": 175,
+    "name": "Laptop computers",
+    "parent": 3
+  },
+  {
+    "category_id": 176,
+    "name": "Desktop computers",
+    "parent": 3
+  },
+  {
+    "category_id": 177,
+    "name": "Tablets",
+    "parent": 147
+  },
+  {
+    "category_id": 182,
+    "name": "Video Game Consoles",
+    "parent": 10
+  },
+  {
+    "category_id": 184,
+    "name": "Video Games & Accessories",
+    "parent": 10
+  },
+  {
+    "category_id": 186,
+    "name": "Binoculars - Telescopes",
+    "parent": 11
+  },
+  {
+    "category_id": 188,
+    "name": "Security Cameras",
+    "parent": 11
+  },
+  {
+    "category_id": 189,
+    "name": "Camera Accessories",
+    "parent": 11
+  },
+  {
+    "category_id": 190,
+    "name": "Cameras",
+    "parent": 11
+  },
+  {
+    "category_id": 196,
+    "name": "Bedroom",
+    "parent": 6
+  },
+  {
+    "category_id": 198,
+    "name": "Garden - Outdoor",
+    "parent": 6
+  },
+  {
+    "category_id": 201,
+    "name": "Fabrics - Curtains - Carpets",
+    "parent": 6
+  },
+  {
+    "category_id": 202,
+    "name": "Home Decoration",
+    "parent": 6
+  },
+  {
+    "category_id": 203,
+    "name": "Lighting Tools",
+    "parent": 6
+  },
+  {
+    "category_id": 205,
+    "name": "Multiple/Other Furniture",
+    "parent": 6
+  },
+  {
+    "category_id": 206,
+    "name": "Fashion & Beauty",
+    "parent": 0
+  },
+  {
+    "category_id": 207,
+    "name": "Women���s",
+    "parent": 206
+  },
+  {
+    "category_id": 208,
+    "name": "Men���s",
+    "parent": 206
+  },
+  {
+    "category_id": 211,
+    "name": "Luggage",
+    "parent": 230
+  },
+  {
+    "category_id": 212,
+    "name": "Men���s Accessories - Perso",
+    "parent": 206
+  },
+  {
+    "category_id": 214,
+    "name": "Women���s Accessories - Cosmetics - Perso",
+    "parent": 206
+  },
+  {
+    "category_id": 217,
+    "name": "Cats",
+    "parent": 14
+  },
+  {
+    "category_id": 218,
+    "name": "Dogs",
+    "parent": 14
+  },
+  {
+    "category_id": 219,
+    "name": "Birds - Pigeons",
+    "parent": 14
+  },
+  {
+    "category_id": 222,
+    "name": "Other Pets & Animals",
+    "parent": 14
+  },
+  {
+    "category_id": 223,
+    "name": "Kids & Babies",
+    "parent": 0
+  },
+  {
+    "category_id": 224,
+    "name": "Baby Clothing",
+    "parent": 223
+  },
+  {
+    "category_id": 226,
+    "name": "Other Baby Items",
+    "parent": 223
+  },
+  {
+    "category_id": 228,
+    "name": "Bicycles",
+    "parent": 230
+  },
+  {
+    "category_id": 230,
+    "name": "Books, Sports & Hobbies",
+    "parent": 0
+  },
+  {
+    "category_id": 231,
+    "name": "Antiques - Collectibles",
+    "parent": 230
+  },
+  {
+    "category_id": 232,
+    "name": "Other Items",
+    "parent": 230
+  },
+  {
+    "category_id": 233,
+    "name": "Industrial Equipment",
+    "parent": 17
+  },
+  {
+    "category_id": 234,
+    "name": "Medical Equipment",
+    "parent": 17
+  },
+  {
+    "category_id": 235,
+    "name": "Construction",
+    "parent": 17
+  },
+  {
+    "category_id": 236,
+    "name": "Restaurants Equipment",
+    "parent": 17
+  },
+  {
+    "category_id": 237,
+    "name": "Whole Business for Sale",
+    "parent": 17
+  },
+  {
+    "category_id": 238,
+    "name": "Other Business, Industrial & Agriculture",
+    "parent": 17
+  },
+  {
+    "category_id": 239,
+    "name": "Kitchen - Kitchenware",
+    "parent": 6
+  },
+  {
+    "category_id": 240,
+    "name": "Study Tools",
+    "parent": 230
+  },
+  {
+    "category_id": 241,
+    "name": "Services",
+    "parent": 0
+  },
+  {
+    "category_id": 242,
+    "name": "Home",
+    "parent": 241
+  },
+  {
+    "category_id": 243,
+    "name": "Health & Beauty",
+    "parent": 241
+  },
+  {
+    "category_id": 244,
+    "name": "Pets",
+    "parent": 241
+  },
+  {
+    "category_id": 245,
+    "name": "Movers",
+    "parent": 241
+  },
+  {
+    "category_id": 246,
+    "name": "Events",
+    "parent": 241
+  },
+  {
+    "category_id": 247,
+    "name": "Business",
+    "parent": 241
+  },
+  {
+    "category_id": 249,
+    "name": "Other Services",
+    "parent": 241
+  },
+  {
+    "category_id": 273,
+    "name": "Cars for Rent",
+    "parent": 129
+  },
+  {
+    "category_id": 299,
+    "name": "Car",
+    "parent": 241
+  },
+  {
+    "category_id": 300,
+    "name": "Education",
+    "parent": 241
+  },
+  {
+    "category_id": 319,
+    "name": "Other make",
+    "parent": 369
+  },
+  {
+    "category_id": 320,
+    "name": "Changan",
+    "parent": 23
+  },
+  {
+    "category_id": 321,
+    "name": "Lancia",
+    "parent": 23
+  },
+  {
+    "category_id": 322,
+    "name": "Senova",
+    "parent": 23
+  },
+  {
+    "category_id": 323,
+    "name": "Jac",
+    "parent": 23
+  },
+  {
+    "category_id": 324,
+    "name": "Aston Martin",
+    "parent": 23
+  },
+  {
+    "category_id": 325,
+    "name": "Bentley",
+    "parent": 23
+  },
+  {
+    "category_id": 326,
+    "name": "Bugatti",
+    "parent": 23
+  },
+  {
+    "category_id": 327,
+    "name": "Buick",
+    "parent": 23
+  },
+  {
+    "category_id": 328,
+    "name": "Cadillac",
+    "parent": 23
+  },
+  {
+    "category_id": 329,
+    "name": "Chana",
+    "parent": 23
+  },
+  {
+    "category_id": 330,
+    "name": "Faw",
+    "parent": 23
+  },
+  {
+    "category_id": 331,
+    "name": "Ferrari",
+    "parent": 23
+  },
+  {
+    "category_id": 332,
+    "name": "Great Wall",
+    "parent": 23
+  },
+  {
+    "category_id": 333,
+    "name": "Infiniti",
+    "parent": 23
+  },
+  {
+    "category_id": 334,
+    "name": "Lamborghini",
+    "parent": 23
+  },
+  {
+    "category_id": 335,
+    "name": "Lexus",
+    "parent": 23
+  },
+  {
+    "category_id": 336,
+    "name": "Lifan",
+    "parent": 23
+  },
+  {
+    "category_id": 337,
+    "name": "Lincoln",
+    "parent": 23
+  },
+  {
+    "category_id": 338,
+    "name": "Maserati",
+    "parent": 23
+  },
+  {
+    "category_id": 339,
+    "name": "Tesla",
+    "parent": 23
+  },
+  {
+    "category_id": 340,
+    "name": "Zotye",
+    "parent": 23
+  },
+  {
+    "category_id": 341,
+    "name": "Changhe",
+    "parent": 23
+  },
+  {
+    "category_id": 342,
+    "name": "Baby & Mom Healthcare",
+    "parent": 223
+  },
+  {
+    "category_id": 343,
+    "name": "Baby Feeding Tools",
+    "parent": 223
+  },
+  {
+    "category_id": 344,
+    "name": "Accessories - Pet Care Products",
+    "parent": 14
+  },
+  {
+    "category_id": 345,
+    "name": "Board - Card Games",
+    "parent": 230
+  },
+  {
+    "category_id": 346,
+    "name": "Agriculture",
+    "parent": 17
+  },
+  {
+    "category_id": 347,
+    "name": "Office Furniture & Equipment",
+    "parent": 17
+  },
+  {
+    "category_id": 348,
+    "name": "Bathroom",
+    "parent": 6
+  },
+  {
+    "category_id": 349,
+    "name": "Dining Room",
+    "parent": 6
+  },
+  {
+    "category_id": 350,
+    "name": "Living Room",
+    "parent": 6
+  },
+  {
+    "category_id": 351,
+    "name": "Customer Service & Call Center",
+    "parent": 100
+  },
+  {
+    "category_id": 352,
+    "name": "Workers and Technicians",
+    "parent": 100
+  },
+  {
+    "category_id": 353,
+    "name": "Drivers & Delivery",
+    "parent": 100
+  },
+  {
+    "category_id": 354,
+    "name": "Guards and Security",
+    "parent": 100
+  },
+  {
+    "category_id": 355,
+    "name": "Legal - Lawyers",
+    "parent": 100
+  },
+  {
+    "category_id": 367,
+    "name": "Mobile Numbers",
+    "parent": 147
+  },
+  {
+    "category_id": 368,
+    "name": "Medical",
+    "parent": 241
+  },
+  {
+    "category_id": 369,
+    "name": "Car Spare Parts",
+    "parent": 129
+  },
+  {
+    "category_id": 370,
+    "name": "Alfa Romeo",
+    "parent": 369
+  },
+  {
+    "category_id": 371,
+    "name": "Aston Martin",
+    "parent": 369
+  },
+  {
+    "category_id": 372,
+    "name": "Audi",
+    "parent": 369
+  },
+  {
+    "category_id": 373,
+    "name": "Bentley",
+    "parent": 369
+  },
+  {
+    "category_id": 374,
+    "name": "BMW",
+    "parent": 369
+  },
+  {
+    "category_id": 375,
+    "name": "Brilliance",
+    "parent": 369
+  },
+  {
+    "category_id": 376,
+    "name": "Bugatti",
+    "parent": 369
+  },
+  {
+    "category_id": 377,
+    "name": "Buick",
+    "parent": 369
+  },
+  {
+    "category_id": 378,
+    "name": "BYD",
+    "parent": 369
+  },
+  {
+    "category_id": 379,
+    "name": "Cadillac",
+    "parent": 369
+  },
+  {
+    "category_id": 380,
+    "name": "Chana",
+    "parent": 369
+  },
+  {
+    "category_id": 381,
+    "name": "Changan",
+    "parent": 369
+  },
+  {
+    "category_id": 382,
+    "name": "Changhe",
+    "parent": 369
+  },
+  {
+    "category_id": 383,
+    "name": "Chery",
+    "parent": 369
+  },
+  {
+    "category_id": 384,
+    "name": "Chevrolet",
+    "parent": 369
+  },
+  {
+    "category_id": 385,
+    "name": "Chrysler",
+    "parent": 369
+  },
+  {
+    "category_id": 386,
+    "name": "Citroen",
+    "parent": 369
+  },
+  {
+    "category_id": 387,
+    "name": "Daewoo",
+    "parent": 369
+  },
+  {
+    "category_id": 388,
+    "name": "Daihatsu",
+    "parent": 369
+  },
+  {
+    "category_id": 389,
+    "name": "Dodge",
+    "parent": 369
+  },
+  {
+    "category_id": 390,
+    "name": "Faw",
+    "parent": 369
+  },
+  {
+    "category_id": 391,
+    "name": "Ferrari",
+    "parent": 369
+  },
+  {
+    "category_id": 392,
+    "name": "Fiat",
+    "parent": 369
+  },
+  {
+    "category_id": 393,
+    "name": "Ford",
+    "parent": 369
+  },
+  {
+    "category_id": 394,
+    "name": "Geely",
+    "parent": 369
+  },
+  {
+    "category_id": 395,
+    "name": "Great Wall",
+    "parent": 369
+  },
+  {
+    "category_id": 396,
+    "name": "Honda",
+    "parent": 369
+  },
+  {
+    "category_id": 397,
+    "name": "Hummer",
+    "parent": 369
+  },
+  {
+    "category_id": 398,
+    "name": "Hyundai",
+    "parent": 369
+  },
+  {
+    "category_id": 399,
+    "name": "Infiniti",
+    "parent": 369
+  },
+  {
+    "category_id": 400,
+    "name": "Isuzu",
+    "parent": 369
+  },
+  {
+    "category_id": 401,
+    "name": "Jac",
+    "parent": 369
+  },
+  {
+    "category_id": 402,
+    "name": "Jaguar",
+    "parent": 369
+  },
+  {
+    "category_id": 403,
+    "name": "Jeep",
+    "parent": 369
+  },
+  {
+    "category_id": 404,
+    "name": "Kia",
+    "parent": 369
+  },
+  {
+    "category_id": 405,
+    "name": "Lada",
+    "parent": 369
+  },
+  {
+    "category_id": 406,
+    "name": "Lamborghini",
+    "parent": 369
+  },
+  {
+    "category_id": 407,
+    "name": "Lancia",
+    "parent": 369
+  },
+  {
+    "category_id": 408,
+    "name": "Land Rover",
+    "parent": 369
+  },
+  {
+    "category_id": 409,
+    "name": "Lexus",
+    "parent": 369
+  },
+  {
+    "category_id": 410,
+    "name": "Lifan",
+    "parent": 369
+  },
+  {
+    "category_id": 411,
+    "name": "Lincoln",
+    "parent": 369
+  },
+  {
+    "category_id": 412,
+    "name": "Maserati",
+    "parent": 369
+  },
+  {
+    "category_id": 413,
+    "name": "Mazda",
+    "parent": 369
+  },
+  {
+    "category_id": 414,
+    "name": "Mercedes-Benz",
+    "parent": 369
+  },
+  {
+    "category_id": 415,
+    "name": "MG",
+    "parent": 369
+  },
+  {
+    "category_id": 416,
+    "name": "MINI",
+    "parent": 369
+  },
+  {
+    "category_id": 417,
+    "name": "Mitsubishi",
+    "parent": 369
+  },
+  {
+    "category_id": 418,
+    "name": "Nissan",
+    "parent": 369
+  },
+  {
+    "category_id": 419,
+    "name": "Opel",
+    "parent": 369
+  },
+  {
+    "category_id": 420,
+    "name": "Peugeot",
+    "parent": 369
+  },
+  {
+    "category_id": 421,
+    "name": "Porsche",
+    "parent": 369
+  },
+  {
+    "category_id": 422,
+    "name": "Proton",
+    "parent": 369
+  },
+  {
+    "category_id": 423,
+    "name": "Renault",
+    "parent": 369
+  },
+  {
+    "category_id": 424,
+    "name": "Saipa",
+    "parent": 369
+  },
+  {
+    "category_id": 425,
+    "name": "Seat",
+    "parent": 369
+  },
+  {
+    "category_id": 426,
+    "name": "Senova",
+    "parent": 369
+  },
+  {
+    "category_id": 427,
+    "name": "Skoda",
+    "parent": 369
+  },
+  {
+    "category_id": 428,
+    "name": "Speranza",
+    "parent": 369
+  },
+  {
+    "category_id": 429,
+    "name": "Ssang Yong",
+    "parent": 369
+  },
+  {
+    "category_id": 430,
+    "name": "Subaru",
+    "parent": 369
+  },
+  {
+    "category_id": 431,
+    "name": "Suzuki",
+    "parent": 369
+  },
+  {
+    "category_id": 432,
+    "name": "Tesla",
+    "parent": 369
+  },
+  {
+    "category_id": 433,
+    "name": "Toyota",
+    "parent": 369
+  },
+  {
+    "category_id": 434,
+    "name": "Volkswagen",
+    "parent": 369
+  },
+  {
+    "category_id": 435,
+    "name": "Volvo",
+    "parent": 369
+  },
+  {
+    "category_id": 436,
+    "name": "Zotye",
+    "parent": 369
+  }
+]
