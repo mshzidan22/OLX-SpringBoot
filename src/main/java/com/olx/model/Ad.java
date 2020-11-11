@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -21,9 +23,9 @@ public class Ad {
     @GeneratedValue
     @Column(name = "AD_ID")
     private Long id;
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String title;
-    @Column(nullable = true, length = 4096)
+    @Column(nullable = false, length = 4096)
     private String description;
     private Long views;
     private String condition;
@@ -40,10 +42,11 @@ public class Ad {
     @JoinColumn(name = "ADVERTISER_ID")
     private Advertiser advertiser;
     @ManyToMany(mappedBy = "saved")
-    private Set<Advertiser> savedBy = new HashSet<Advertiser>();
+
+    private Set<Advertiser> savedBy = new HashSet<>();
     @ElementCollection
     @JoinColumn(name = "AD_ID")
-    private Set<Img> images = new HashSet<Img>();
+    private Set<Img> images = new HashSet<>();
 
 }
 
