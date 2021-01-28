@@ -49,6 +49,8 @@ public interface AdRepository extends JpaRepository<Ad,Long> {
     );
 
      List<Ad> findByAdvertiserId (Long id);
+
+     long countByIdAndAdvertiserId(Long adId , Long advertiserId);
     @Modifying
     @Transactional
     @Query(value = "insert into saved_ads values (:advertiserId,:adId)",nativeQuery = true)
@@ -58,5 +60,18 @@ public interface AdRepository extends JpaRepository<Ad,Long> {
     @Transactional
     @Query(value = "delete from saved_ads where ad_id = :adId",nativeQuery = true)
      void deleteSavedAd(Long adId);
+
+    @Modifying
+    @Transactional
+    @Query(value = "delete from saved_ads where ad_id = :adId and advertiser_id = :advertiserId",nativeQuery = true)
+    void unSaveAd(Long adId , Long advertiserId);
+
+    @Query(value = "select ad_id from saved_ads where advertiser_id = :advertiserId",nativeQuery = true)
+    List<Long> findSavedAds (Long advertiserId);
+
+    //List<Ad> findByIdIn(List<Long> savedAds);
+
+
+
     //@FindWithOptionalParams
 }

@@ -5,12 +5,14 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.olx.dto.CategoryDto;
 import com.olx.dto.RelevantAdDto;
+import com.olx.execption.LocationNotFoundException;
 import com.olx.model.Ad;
 import com.olx.model.Category;
 import com.olx.model.Location;
 import com.olx.service.AdService;
 import com.olx.service.CategoryService;
 import com.olx.service.LocationService;
+import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -44,13 +46,15 @@ public class Utils {
     }
 
     // need to be worked without DB
+    //done
+
     public GovAndCity getGovAndCity(Location loc) {
         boolean isInWholeEgypt = loc.getParent() == 0;
         boolean isInWholeGov = loc.getParent() == 1;
 
         if (isInWholeEgypt) return null;
         else if (isInWholeGov) return new GovAndCity(loc.getName(), null);
-        else return new GovAndCity(locServ.getLocationById((long) loc.getParent()).getName(), loc.getName());
+        else return new GovAndCity(locServ.getLocationById(loc.getParent()).getName(), loc.getName());
 
     }
 
@@ -74,15 +78,14 @@ public class Utils {
 
     }
 
-    // need new Version without Db
-    //delete this method
+
     private boolean isCategoryLv2(Category category) {
         int[] lv1Category = {6, 14, 17, 20, 100, 129, 138, 147, 206, 223, 230, 241};
         return Arrays.stream(lv1Category).anyMatch(s -> s == category.getParent());
 
     }
 
-    public Set<RelevantAdDto> GetRelevantAds(Long advertiserId) {
+    public Set<RelevantAdDto> GetRelevantAds(Long advertiserId)  {
         Set<RelevantAdDto> relevantAdDtoSet = new HashSet<>();
         ArrayList<Ad> rel = adServ.getRelatedAds(advertiserId);
         for (Ad ad : rel) {
@@ -103,7 +106,7 @@ public class Utils {
 
 
     public List<Long> getCategoryAllChildren(Long categoryId) throws IOException {
-        List<Long> childrenIdsList = new ArrayList<Long>();
+        List<Long> childrenIdsList = new ArrayList<>();
         //need to be relative path
         CategoryJson[] categories = objectMapper.readValue(
                 new File("C:\\Users\\mshzidanPC\\spring_boot\\olx\\src\\main\\resources\\static\\json_files\\category.json"),
@@ -126,11 +129,10 @@ public class Utils {
     }
 
     public List<Long> getLocationAllChildren(Long locationId) throws IOException {
-        List<Long> childrenIdsList = new ArrayList<Long>();
+        List<Long> childrenIdsList = new ArrayList<>();
         LocationJson[] locations = objectMapper.readValue(
                 new File("C:\\Users\\mshzidanPC\\spring_boot\\olx\\src\\main\\resources\\static\\json_files\\location.json"),
                 LocationJson[].class);
-        System.out.println("");
         for (LocationJson l : locations) {
             if (l.getParent().equals(locationId)) {
 
@@ -147,4 +149,15 @@ public class Utils {
         childrenIdsList.add(locationId);
         return childrenIdsList;
     }
+
+
+
+//    public Location getLocationById (Long locId) throws IOException {
+//        LocationJson[] locations = objectMapper.readValue(
+//                new File("C:\\Users\\mshzidanPC\\spring_boot\\olx\\src\\main\\resources\\static\\json_files\\location.json"),
+//                LocationJson[].class);
+//
+//        LocationJson lj =   Arrays.stream(locations).filter(l -> l.getId().equals(locId)).findFirst().orElseThrow(() -> new LocationNotFoundException("no location"));
+//         return lj.toLocation();
+//    }
 }

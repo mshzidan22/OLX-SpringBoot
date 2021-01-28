@@ -1,12 +1,16 @@
 package com.olx.model;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.experimental.FieldNameConstants;
 
 import javax.persistence.*;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-@Data
+@Setter
+@Getter
 @Entity
 public class Category {
     @Id

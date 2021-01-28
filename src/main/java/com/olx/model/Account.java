@@ -11,6 +11,7 @@ public class Account {
     @GeneratedValue
     @Column(name = "ACCOUNT_ID")
     private Long id;
+    @Column(unique=true)
     private String email;
     private String password;
     @OneToOne(mappedBy = "account")

@@ -12,11 +12,13 @@ import com.olx.service.CategoryService;
 import com.olx.service.LocationService;
 import com.olx.util.GovAndCity;
 import com.olx.util.Utils;
+import lombok.SneakyThrows;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -37,8 +39,7 @@ public class AdConverter  {
     private LocationService locationService;
     @Autowired
     private AccountService accountService;
-
-    public  AdDto entityToDto(Ad ad) {
+    public  AdDto entityToDto(Ad ad)  {
         AdDto adDto = mapper.map(ad, AdDto.class);
         adDto.setAddedAt(utils.convertDate(ad.getTime()));
         GovAndCity govAndCity = utils.getGovAndCity(ad.getLocation());
@@ -48,7 +49,8 @@ public class AdConverter  {
         adDto.setRelevantAdDto(utils.GetRelevantAds(ad.getAdvertiser().getId()));
         return adDto;
     }
-    public MiniAdDto entityToMiniAdDto (Ad ad){
+    @SneakyThrows
+    public MiniAdDto entityToMiniAdDto (Ad ad) throws IOException {
         MiniAdDto miniAdDto = new MiniAdDto();
 
         // need to be encapsulated
@@ -63,8 +65,8 @@ public class AdConverter  {
         miniAdDto.setCategoryDto(utils.getCategoryAndSub(ad.getCategory()));
         return miniAdDto;
     }
-
-    public  List<MiniAdDto> listEntityToDto (ArrayList<Ad> ads) {
+    @SneakyThrows
+    public  List<MiniAdDto> listEntityToDto (ArrayList<Ad> ads) throws IOException {
         List<MiniAdDto> list = new ArrayList<>();
 
         for (Ad ad : ads){
@@ -73,13 +75,13 @@ public class AdConverter  {
         }
          return list;
     }
-
+    @SneakyThrows
     public EntityModel<MiniAdDto> entityToEntityModel (Ad ad) {
         MiniAdDto miniAdDto = entityToMiniAdDto(ad);
         return adModelAssembler.MiniToModel(miniAdDto);
     }
 
-
+    @SneakyThrows
     public Ad adInputDtoToAd(AdInputDto adInputDto){
         Ad ad = new Ad();
         Set<Img> imgs = new HashSet<>();
@@ -98,7 +100,7 @@ public class AdConverter  {
       return ad;
 
     }
-
+    @SneakyThrows
     public AdUserDto AdToAdUserDto (Ad ad){
            AdUserDto adUserDto = mapper.map(ad,AdUserDto.class);
            adUserDto.setAddedAt(utils.convertDate(ad.getTime()));

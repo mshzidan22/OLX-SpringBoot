@@ -10,5 +10,6 @@ import java.util.Optional;
 
 @Repository
 public interface AdvertiserRepository extends JpaRepository<Advertiser,Long> {
+    public Optional<Advertiser> findByAccountEmail (String email);
 
 }

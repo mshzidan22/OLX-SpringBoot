@@ -3,10 +3,7 @@ package com.olx.controller;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.olx.assemblers.AdModelAssembler;
 import com.olx.converter.AdConverter;
-import com.olx.dto.AdDto;
-import com.olx.dto.AdInputDto;
-import com.olx.dto.MiniAdDto;
-import com.olx.dto.UserInfo;
+import com.olx.dto.*;
 import com.olx.execption.LocationNotFoundException;
 import com.olx.model.Account;
 import com.olx.model.Ad;
@@ -16,6 +13,7 @@ import com.olx.repository.AdvertiserRepository;
 import com.olx.service.AccountService;
 import com.olx.service.AdService;
 import com.olx.util.AdIdInput;
+import com.olx.util.ImgToken;
 import com.olx.util.Schedule;
 import com.olx.util.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,10 +28,15 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.io.IOException;
 import java.security.Principal;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @RestController
+@CrossOrigin
+
 public class AdController {
     @Autowired
     private AdService adService;
@@ -47,6 +50,8 @@ public class AdController {
     private Schedule schedule;
     @Autowired
     private AdConverter adConverter;
+    @Autowired
+    private ImgToken imgToken;
 
        //should be response here
        @GetMapping("/ads/{id}")
@@ -85,18 +90,19 @@ public class AdController {
 
         @PostMapping("/adding")
         public ResponseEntity<EntityModel<AdDto>> createAd(@RequestBody @Valid AdInputDto adInputDto){
+            System.out.println("start adding");
                 Ad ad= adService.saveAd(adConverter.adInputDtoToAd(adInputDto));
                 AdDto adDto = adConverter.entityToDto(ad);
                return new ResponseEntity<EntityModel<AdDto>>(adModelAssembler.toModel(adDto),HttpStatus.CREATED) ;
         }
 
         @GetMapping("/token")
-        public ResponseEntity<String> getImgToken (){
-               return new ResponseEntity<String>(schedule.getToken(),HttpStatus.OK);
+        public ResponseEntity<ImgToken> getImgToken (){
+               return new ResponseEntity<ImgToken>(imgToken,HttpStatus.OK);
         }
         //need more work
         @PostMapping("/saveAd")
-       public ResponseEntity<?> savaAd (@RequestBody AdIdInput adId, Principal principal ){
+       public ResponseEntity<?> saveAd (@RequestBody AdIdInput adId, Principal principal ){
             Account account =accountService.getAccountByEmail(principal.getName())
                     .orElseThrow(() -> new UsernameNotFoundException("No Such Account"));
             Long advertiserId = account.getAdvertiser().getId();
@@ -104,5 +110,43 @@ public class AdController {
              return new ResponseEntity<>(HttpStatus.OK);
 
         }
+
+        @GetMapping("/canEdit/{adId}/{userId}")
+        public Boolean canEdit(@PathVariable Long adId , @PathVariable Long userId){
+           return adService.IsAdBelongsToUser(adId, userId);
+        }
+
+        @DeleteMapping("/unSave/{adId}")
+        public ResponseEntity<?> unSaveAd(@PathVariable Long adId , Principal principal){
+            Account account =accountService.getAccountByEmail(principal.getName())
+                    .orElseThrow(() -> new UsernameNotFoundException("No Such Account"));
+            Long advertiserId = account.getAdvertiser().getId();
+            adService.unSaveAd(adId , advertiserId);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+
+        }
+       //return only Ids
+        @GetMapping("/mySavedAds")
+       public ResponseEntity<List<Long>> getSavedAdsByUser(Principal principal){
+            Account account =accountService.getAccountByEmail(principal.getName())
+                    .orElseThrow(() -> new UsernameNotFoundException("No Such Account"));
+            Long advertiserId = account.getAdvertiser().getId();
+           List<Long>  ads = adService.getSavedAdsByUser(advertiserId);
+           return new ResponseEntity<>(ads , HttpStatus.OK);
+        }
+
+    @GetMapping("myaccount/savedAds")
+    public ResponseEntity<List<MiniAdDto>> getSavedAds (Principal principal) throws IOException {
+        Account account =accountService.getAccountByEmail(principal.getName())
+                .orElseThrow(() -> new UsernameNotFoundException("No Such Account"));
+        List<Ad> saved = account.getAdvertiser().getSaved().stream().collect(Collectors.toList());
+        List<MiniAdDto> savedList =  adConverter.listEntityToDto((ArrayList<Ad>) saved);
+        return new ResponseEntity<>(savedList, HttpStatus.OK);
+    }
+
+
+
+
+
 
 }

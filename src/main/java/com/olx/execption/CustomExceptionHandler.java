@@ -32,6 +32,21 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
         return new ResponseEntity<>(apiError,HttpStatus.NOT_FOUND);
     }
 
+    @ExceptionHandler(IncorrectUserOrPassException.class)
+    public ResponseEntity<Object> handleIncorrectUserOrPassException(IncorrectUserOrPassException ex) {
+        ApiError apiError = new ApiError(ex.getMessage(),HttpStatus.UNAUTHORIZED,ex);
+        return new ResponseEntity<>(apiError,HttpStatus.UNAUTHORIZED);
+    }
+    @ExceptionHandler(DuplicateEmailException.class)
+    public ResponseEntity<Object> handleDuplicateEmailException(DuplicateEmailException ex) {
+        ApiError apiError = new ApiError(ex.getMessage(),HttpStatus.UNPROCESSABLE_ENTITY,ex);
+        return new ResponseEntity<>(apiError,HttpStatus.UNPROCESSABLE_ENTITY);
+    }
+
+
+
+
+
 
 
 

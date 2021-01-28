@@ -1,12 +1,11 @@
 package com.olx.assemblers;
 
-import com.olx.controller.AdController;
-import com.olx.controller.CategoryController;
-import com.olx.controller.LocationController;
-import com.olx.controller.SearchController;
+import com.olx.controller.*;
 import com.olx.dto.AdDto;
 import com.olx.dto.AdUserDto;
 import com.olx.dto.MiniAdDto;
+import com.olx.model.Account;
+import com.olx.model.Advertiser;
 import lombok.SneakyThrows;
 import org.springframework.data.domain.Pageable;
 import org.springframework.hateoas.CollectionModel;
@@ -61,10 +60,16 @@ public class AdModelAssembler {
         return CollectionModel.of(miniEntityList,
                 linkTo(methodOn(AdController.class).all()).withSelfRel());
     }
+
+
      // need more for delete and update
     public EntityModel<AdUserDto> toAdUserDtoModel (AdUserDto adUserDto){
          return EntityModel.of(adUserDto,
-                linkTo(methodOn(AdController.class).oneAd(adUserDto.getId())).withSelfRel());
+                linkTo(methodOn(AdController.class).oneAd(adUserDto.getId())).withSelfRel(),
+                linkTo(methodOn(AccountController.class).deleteAd(adUserDto.getId())).withRel("delete")
+
+         );
+
     }
 
 

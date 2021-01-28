@@ -1,7 +1,10 @@
 package com.olx.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
@@ -24,6 +27,7 @@ public class Advertiser {
     @ManyToMany(cascade = {CascadeType.DETACH ,CascadeType.PERSIST })
     @JoinTable(name = "SAVED_ADS",joinColumns = { @JoinColumn(name = "ADVERTISER_ID") },
            inverseJoinColumns = { @JoinColumn(name = "AD_ID") })
+    @JsonIgnore
     private Set<Ad> saved = new HashSet<>();
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "ACCOUNT_ID")

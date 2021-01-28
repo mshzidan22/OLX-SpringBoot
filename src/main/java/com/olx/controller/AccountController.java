@@ -19,11 +19,13 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.io.IOException;
 import java.security.Principal;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
+@CrossOrigin
 @RestController
 public class AccountController {
     @Autowired
@@ -34,9 +36,10 @@ public class AccountController {
     private AdModelAssembler adModelAssembler;
     @Autowired
     private AdConverter adConverter;
-
     @GetMapping("/myaccount")
     public ResponseEntity<List<EntityModel<AdUserDto>>> myAccount (Principal principal){
+        System.out.println("hi");
+
         Account account=accountService.getAccountByEmail(principal.getName()).orElseThrow(RuntimeException::new);
         List<AdUserDto> adList = adService.getAllAdsByAdvertiser(account.getAdvertiser().getId());
         List<EntityModel<AdUserDto>> listResponse=adList.stream().map(adModelAssembler::toAdUserDtoModel).collect(Collectors.toList());
@@ -53,7 +56,7 @@ public class AccountController {
     }
 
     @PutMapping("/myaccount/ad/{id}")
-    public ResponseEntity<?> replaceAd (@RequestBody UpdatedAdDto updatedAdDto, @PathVariable Long id){
+    public ResponseEntity<?> replaceAd (@RequestBody UpdatedAdDto updatedAdDto, @PathVariable Long id)  {
        Ad updatedAd= adService.findAd(id).map(ad -> {
             ad.setTitle(updatedAdDto.getTitle());
             ad.setCondition(updatedAdDto.getCondition());
@@ -61,7 +64,8 @@ public class AccountController {
             ad.setDescription(updatedAdDto.getDescription());
             ad.setBrand(updatedAdDto.getBrand());
             ad.setImages(updatedAdDto.getImages().stream().map(a-> new Img(a)).collect(Collectors.toSet()));
-            return adService.saveAd(ad);
+
+           return adService.saveAd(ad);
 
         }).orElseThrow(()->new RuntimeException("hi"));
 
@@ -84,10 +88,9 @@ public class AccountController {
 
         return new ResponseEntity<>(HttpStatus.CREATED);
 
-
-
-
     }
+
+
 
 
 
