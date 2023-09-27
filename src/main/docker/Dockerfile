@@ -17,7 +17,16 @@ RUN mkdir -p target/docker-packaging && cd target/docker-packaging && jar -xf ..
 
 
 
-FROM gcr.io/distroless/java
-COPY --from=build /usr/src/app/target/olx-0.0.1-SNAPSHOT.jar /usr/app/helloworld-1.0.0-SNAPSHOT.jar
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","/usr/app/olx-0.0.1-SNAPSHOT.jar"]
+FROM openjdk:8-alpine
+WORKDIR /app
+
+#copy built app layer by layer
+ARG DOCKER_PACKAGING_DIR=/app/target/docker-packaging
+COPY --from=maven_build ${DOCKER_PACKAGING_DIR}/BOOT-INF/lib /app/lib
+COPY --from=maven_build ${DOCKER_PACKAGING_DIR}/BOOT-INF/classes /app/classes
+COPY --from=maven_build ${DOCKER_PACKAGING_DIR}/META-INF /app/META-INF
+
+#run the app
+CMD java -cp .:classes:lib/* \
+         -Djava.security.egd=file:/dev/./urandom \
+         foo.bar.MySpringBootApplication
