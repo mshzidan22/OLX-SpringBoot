@@ -1,15 +1,14 @@
-#
-# Build stage
-#
-FROM maven:3.8.1-openjdk-8-slim AS build
-COPY src /home/app/src
-COPY pom.xml /home/app
-RUN mvn -f /home/app/pom.xml clean package
+FROM openjdk:8 as buildstage
+WORKDIR /app
+COPY mvnw .
+COPY pom.xml .
+COPY .mvn .mvn
+COPY src src
+RUN chmod +x ./mvnw
+RUN ./mvnw package
+COPY target/*jar app.jar
 
-#
-# Package stage
-#
-FROM openjdk:8-jdk-slim
-COPY --from=build /home/app/target/olx-0.0.1-SNAPSHOT-SNAPSHOT.jar  /usr/local/lib/olx.jar
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","/usr/local/lib/olx-0.0.1-SNAPSHOT.jar"]
+
+FROM openjdk:8
+COPY --from=buildstage /app/app.jar .
+ENTRYPOINT ["java","-jar","/app.jar"]
