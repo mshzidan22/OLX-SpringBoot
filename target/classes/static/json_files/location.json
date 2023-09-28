@@ -1,0 +1,2077 @@
+[
+  {
+    "id": 1,
+    "name": "Egypt",
+    "parent": "0"
+  },
+  {
+    "id": 2,
+    "name": "Alexandria",
+    "parent": 1
+  },
+  {
+    "id": 100,
+    "name": "Abu Qir",
+    "parent": 2
+  },
+  {
+    "id": 101,
+    "name": "Abu Talat",
+    "parent": 2
+  },
+  {
+    "id": 102,
+    "name": "Agami",
+    "parent": 2
+  },
+  {
+    "id": 103,
+    "name": "Al Hadrah",
+    "parent": 2
+  },
+  {
+    "id": 104,
+    "name": "Al Ibrahimiyyah",
+    "parent": 2
+  },
+  {
+    "id": 105,
+    "name": "Amreya",
+    "parent": 2
+  },
+  {
+    "id": 106,
+    "name": "Asafra",
+    "parent": 2
+  },
+  {
+    "id": 107,
+    "name": "Attarin",
+    "parent": 2
+  },
+  {
+    "id": 108,
+    "name": "Awayed",
+    "parent": 2
+  },
+  {
+    "id": 109,
+    "name": "Azarita",
+    "parent": 2
+  },
+  {
+    "id": 110,
+    "name": "Bacchus",
+    "parent": 2
+  },
+  {
+    "id": 111,
+    "name": "Bahray - Anfoshy",
+    "parent": 2
+  },
+  {
+    "id": 112,
+    "name": "Bolkly",
+    "parent": 2
+  },
+  {
+    "id": 113,
+    "name": "Borg al-Arab",
+    "parent": 2
+  },
+  {
+    "id": 114,
+    "name": "Camp Caesar",
+    "parent": 2
+  },
+  {
+    "id": 115,
+    "name": "Cleopatra",
+    "parent": 2
+  },
+  {
+    "id": 116,
+    "name": "Dekheila",
+    "parent": 2
+  },
+  {
+    "id": 117,
+    "name": "Dhahria",
+    "parent": 2
+  },
+  {
+    "id": 118,
+    "name": "El Max",
+    "parent": 2
+  },
+  {
+    "id": 119,
+    "name": "Fleming",
+    "parent": 2
+  },
+  {
+    "id": 120,
+    "name": "Glim",
+    "parent": 2
+  },
+  {
+    "id": 121,
+    "name": "Gomrok",
+    "parent": 2
+  },
+  {
+    "id": 122,
+    "name": "Kabbary",
+    "parent": 2
+  },
+  {
+    "id": 123,
+    "name": "Kafr Abdo",
+    "parent": 2
+  },
+  {
+    "id": 124,
+    "name": "Karmous",
+    "parent": 2
+  },
+  {
+    "id": 125,
+    "name": "Koum al-Dikka",
+    "parent": 2
+  },
+  {
+    "id": 126,
+    "name": "Labban",
+    "parent": 2
+  },
+  {
+    "id": 127,
+    "name": "Laurent",
+    "parent": 2
+  },
+  {
+    "id": 128,
+    "name": "Maamoura",
+    "parent": 2
+  },
+  {
+    "id": 129,
+    "name": "Mandara",
+    "parent": 2
+  },
+  {
+    "id": 130,
+    "name": "Manshiyya",
+    "parent": 2
+  },
+  {
+    "id": 131,
+    "name": "Miami",
+    "parent": 2
+  },
+  {
+    "id": 132,
+    "name": "Moharam Bik",
+    "parent": 2
+  },
+  {
+    "id": 133,
+    "name": "Montazah",
+    "parent": 2
+  },
+  {
+    "id": 134,
+    "name": "Nakheel",
+    "parent": 2
+  },
+  {
+    "id": 135,
+    "name": "Raml Station",
+    "parent": 2
+  },
+  {
+    "id": 136,
+    "name": "Ras El Tin",
+    "parent": 2
+  },
+  {
+    "id": 137,
+    "name": "Roushdy",
+    "parent": 2
+  },
+  {
+    "id": 138,
+    "name": "Saba Pasha",
+    "parent": 2
+  },
+  {
+    "id": 139,
+    "name": "Salehia",
+    "parent": 2
+  },
+  {
+    "id": 140,
+    "name": "San Stefano",
+    "parent": 2
+  },
+  {
+    "id": 141,
+    "name": "Schutz",
+    "parent": 2
+  },
+  {
+    "id": 142,
+    "name": "Seyouf",
+    "parent": 2
+  },
+  {
+    "id": 143,
+    "name": "Shatby",
+    "parent": 2
+  },
+  {
+    "id": 144,
+    "name": "Sidi Beshr",
+    "parent": 2
+  },
+  {
+    "id": 145,
+    "name": "Sidi Gaber",
+    "parent": 2
+  },
+  {
+    "id": 146,
+    "name": "Smoha",
+    "parent": 2
+  },
+  {
+    "id": 147,
+    "name": "Sporting",
+    "parent": 2
+  },
+  {
+    "id": 148,
+    "name": "Stanley",
+    "parent": 2
+  },
+  {
+    "id": 149,
+    "name": "Victoria",
+    "parent": 2
+  },
+  {
+    "id": 150,
+    "name": "Wardian",
+    "parent": 2
+  },
+  {
+    "id": 151,
+    "name": "Zezenia",
+    "parent": 2
+  },
+  {
+    "id": 3,
+    "name": "Aswan",
+    "parent": 1
+  },
+  {
+    "id": 152,
+    "name": "Abou al-Reish",
+    "parent": 3
+  },
+  {
+    "id": 153,
+    "name": "Abou Simbel",
+    "parent": 3
+  },
+  {
+    "id": 154,
+    "name": "Aswan City",
+    "parent": 3
+  },
+  {
+    "id": 155,
+    "name": "Basiliah",
+    "parent": 3
+  },
+  {
+    "id": 156,
+    "name": "Daraw",
+    "parent": 3
+  },
+  {
+    "id": 157,
+    "name": "Edfu",
+    "parent": 3
+  },
+  {
+    "id": 158,
+    "name": "Kalabsha",
+    "parent": 3
+  },
+  {
+    "id": 159,
+    "name": "Kom Ombo",
+    "parent": 3
+  },
+  {
+    "id": 160,
+    "name": "Nasr al-Noba",
+    "parent": 3
+  },
+  {
+    "id": 161,
+    "name": "Rdesiah",
+    "parent": 3
+  },
+  {
+    "id": 162,
+    "name": "Sahara",
+    "parent": 3
+  },
+  {
+    "id": 163,
+    "name": "Sebaeiah",
+    "parent": 3
+  },
+  {
+    "id": 4,
+    "name": "Asyut",
+    "parent": 1
+  },
+  {
+    "id": 164,
+    "name": "Abnub",
+    "parent": 4
+  },
+  {
+    "id": 165,
+    "name": "Abu Teeg",
+    "parent": 4
+  },
+  {
+    "id": 166,
+    "name": "Asyut City",
+    "parent": 4
+  },
+  {
+    "id": 167,
+    "name": "Badari",
+    "parent": 4
+  },
+  {
+    "id": 168,
+    "name": "Dairut",
+    "parent": 4
+  },
+  {
+    "id": 169,
+    "name": "Fateh",
+    "parent": 4
+  },
+  {
+    "id": 170,
+    "name": "Ghanayem",
+    "parent": 4
+  },
+  {
+    "id": 171,
+    "name": "Manfalut",
+    "parent": 4
+  },
+  {
+    "id": 172,
+    "name": "New Assiut",
+    "parent": 4
+  },
+  {
+    "id": 173,
+    "name": "New Tiba",
+    "parent": 4
+  },
+  {
+    "id": 174,
+    "name": "Qusiya",
+    "parent": 4
+  },
+  {
+    "id": 175,
+    "name": "Sahel Selim",
+    "parent": 4
+  },
+  {
+    "id": 176,
+    "name": "Sedfa",
+    "parent": 4
+  },
+  {
+    "id": 5,
+    "name": "Beheira",
+    "parent": 1
+  },
+  {
+    "id": 177,
+    "name": "Abou Homs",
+    "parent": 5
+  },
+  {
+    "id": 178,
+    "name": "Abuu al-Matamer",
+    "parent": 5
+  },
+  {
+    "id": 179,
+    "name": "Damanhour",
+    "parent": 5
+  },
+  {
+    "id": 180,
+    "name": "Delengat",
+    "parent": 5
+  },
+  {
+    "id": 181,
+    "name": "Edko",
+    "parent": 5
+  },
+  {
+    "id": 182,
+    "name": "Etay al-Barud",
+    "parent": 5
+  },
+  {
+    "id": 183,
+    "name": "Hosh Essa",
+    "parent": 5
+  },
+  {
+    "id": 184,
+    "name": "Kafr al-Dawwar",
+    "parent": 5
+  },
+  {
+    "id": 185,
+    "name": "Kom Hamadah",
+    "parent": 5
+  },
+  {
+    "id": 186,
+    "name": "Mahmoudiyah",
+    "parent": 5
+  },
+  {
+    "id": 187,
+    "name": "Markaz Badr",
+    "parent": 5
+  },
+  {
+    "id": 188,
+    "name": "Nubariyah",
+    "parent": 5
+  },
+  {
+    "id": 189,
+    "name": "Rahmaniya",
+    "parent": 5
+  },
+  {
+    "id": 190,
+    "name": "Rashid",
+    "parent": 5
+  },
+  {
+    "id": 191,
+    "name": "Shubrakhit",
+    "parent": 5
+  },
+  {
+    "id": 192,
+    "name": "Wadi al-Natrun",
+    "parent": 5
+  },
+  {
+    "id": 6,
+    "name": "Beni Suef",
+    "parent": 1
+  },
+  {
+    "id": 193,
+    "name": "Al Feshn",
+    "parent": 6
+  },
+  {
+    "id": 194,
+    "name": "Al Wasty",
+    "parent": 6
+  },
+  {
+    "id": 195,
+    "name": "Beba",
+    "parent": 6
+  },
+  {
+    "id": 196,
+    "name": "Beni Suef City",
+    "parent": 6
+  },
+  {
+    "id": 197,
+    "name": "Ehnasia",
+    "parent": 6
+  },
+  {
+    "id": 198,
+    "name": "Nasser",
+    "parent": 6
+  },
+  {
+    "id": 199,
+    "name": "New Beni Suef",
+    "parent": 6
+  },
+  {
+    "id": 200,
+    "name": "Samasta",
+    "parent": 6
+  },
+  {
+    "id": 7,
+    "name": "Cairo",
+    "parent": 1
+  },
+  {
+    "id": 201,
+    "name": "15 May City",
+    "parent": 7
+  },
+  {
+    "id": 202,
+    "name": "Abasiya",
+    "parent": 7
+  },
+  {
+    "id": 203,
+    "name": "Ain Shams",
+    "parent": 7
+  },
+  {
+    "id": 204,
+    "name": "Al Amiriyyah",
+    "parent": 7
+  },
+  {
+    "id": 205,
+    "name": "Al Manial",
+    "parent": 7
+  },
+  {
+    "id": 206,
+    "name": "Almazah",
+    "parent": 7
+  },
+  {
+    "id": 207,
+    "name": "Ataba",
+    "parent": 7
+  },
+  {
+    "id": 208,
+    "name": "Bab al-Shereia",
+    "parent": 7
+  },
+  {
+    "id": 209,
+    "name": "Badr City",
+    "parent": 7
+  },
+  {
+    "id": 210,
+    "name": "Basateen",
+    "parent": 7
+  },
+  {
+    "id": 211,
+    "name": "Boulaq",
+    "parent": 7
+  },
+  {
+    "id": 212,
+    "name": "Dar al-Salaam",
+    "parent": 7
+  },
+  {
+    "id": 213,
+    "name": "Darb al-Ahmar",
+    "parent": 7
+  },
+  {
+    "id": 214,
+    "name": "Darrasa",
+    "parent": 7
+  },
+  {
+    "id": 215,
+    "name": "Downtown Cairo",
+    "parent": 7
+  },
+  {
+    "id": 216,
+    "name": "El Fostat",
+    "parent": 7
+  },
+  {
+    "id": 217,
+    "name": "Ezbet El Nakhl",
+    "parent": 7
+  },
+  {
+    "id": 218,
+    "name": "Gamaleya",
+    "parent": 7
+  },
+  {
+    "id": 219,
+    "name": "Garden City",
+    "parent": 7
+  },
+  {
+    "id": 220,
+    "name": "Gesr Al Suez",
+    "parent": 7
+  },
+  {
+    "id": 221,
+    "name": "Hadayek al-Kobba",
+    "parent": 7
+  },
+  {
+    "id": 222,
+    "name": "Hadayek Helwan",
+    "parent": 7
+  },
+  {
+    "id": 223,
+    "name": "Heliopolis",
+    "parent": 7
+  },
+  {
+    "id": 224,
+    "name": "Helmeya al-Gadeda",
+    "parent": 7
+  },
+  {
+    "id": 225,
+    "name": "Helmeyat El Zaytoun",
+    "parent": 7
+  },
+  {
+    "id": 226,
+    "name": "Helwan",
+    "parent": 7
+  },
+  {
+    "id": 227,
+    "name": "Katameya",
+    "parent": 7
+  },
+  {
+    "id": 228,
+    "name": "Ma'sara",
+    "parent": 7
+  },
+  {
+    "id": 229,
+    "name": "Maadi",
+    "parent": 7
+  },
+  {
+    "id": 230,
+    "name": "Madinaty",
+    "parent": 7
+  },
+  {
+    "id": 231,
+    "name": "Marg",
+    "parent": 7
+  },
+  {
+    "id": 232,
+    "name": "Masr al-Kadema",
+    "parent": 7
+  },
+  {
+    "id": 233,
+    "name": "Matareya",
+    "parent": 7
+  },
+  {
+    "id": 234,
+    "name": "Mokattam",
+    "parent": 7
+  },
+  {
+    "id": 235,
+    "name": "Moski",
+    "parent": 7
+  },
+  {
+    "id": 236,
+    "name": "Mostakbal City",
+    "parent": 7
+  },
+  {
+    "id": 237,
+    "name": "Nasr City",
+    "parent": 7
+  },
+  {
+    "id": 238,
+    "name": "New Cairo - El Tagamoa",
+    "parent": 7
+  },
+  {
+    "id": 239,
+    "name": "New Capital City",
+    "parent": 7
+  },
+  {
+    "id": 240,
+    "name": "New Heliopolis",
+    "parent": 7
+  },
+  {
+    "id": 241,
+    "name": "New Nozha",
+    "parent": 7
+  },
+  {
+    "id": 242,
+    "name": "Obour City",
+    "parent": 7
+  },
+  {
+    "id": 243,
+    "name": "Qasr al-Nil",
+    "parent": 7
+  },
+  {
+    "id": 244,
+    "name": "Ramses + Ramses Extension",
+    "parent": 7
+  },
+  {
+    "id": 245,
+    "name": "Rehab City",
+    "parent": 7
+  },
+  {
+    "id": 246,
+    "name": "Rod al-Farag",
+    "parent": 7
+  },
+  {
+    "id": 247,
+    "name": "Salam City",
+    "parent": 7
+  },
+  {
+    "id": 248,
+    "name": "Sayeda Zeinab",
+    "parent": 7
+  },
+  {
+    "id": 249,
+    "name": "Sharabeya",
+    "parent": 7
+  },
+  {
+    "id": 250,
+    "name": "Sheraton",
+    "parent": 7
+  },
+  {
+    "id": 251,
+    "name": "Shorouk City",
+    "parent": 7
+  },
+  {
+    "id": 252,
+    "name": "Shubra",
+    "parent": 7
+  },
+  {
+    "id": 253,
+    "name": "Tebeen",
+    "parent": 7
+  },
+  {
+    "id": 254,
+    "name": "Tura",
+    "parent": 7
+  },
+  {
+    "id": 255,
+    "name": "Waili",
+    "parent": 7
+  },
+  {
+    "id": 256,
+    "name": "Zahraa Al Maadi",
+    "parent": 7
+  },
+  {
+    "id": 257,
+    "name": "Zamalek",
+    "parent": 7
+  },
+  {
+    "id": 258,
+    "name": "Zawya al-Hamra",
+    "parent": 7
+  },
+  {
+    "id": 8,
+    "name": "Dakahlia",
+    "parent": 1
+  },
+  {
+    "id": 259,
+    "name": "Aga",
+    "parent": 8
+  },
+  {
+    "id": 260,
+    "name": "Akhtab",
+    "parent": 8
+  },
+  {
+    "id": 261,
+    "name": "Bani Ubayd",
+    "parent": 8
+  },
+  {
+    "id": 262,
+    "name": "Belqas",
+    "parent": 8
+  },
+  {
+    "id": 263,
+    "name": "Dikirnis",
+    "parent": 8
+  },
+  {
+    "id": 264,
+    "name": "El Kordy",
+    "parent": 8
+  },
+  {
+    "id": 265,
+    "name": "Gamasa",
+    "parent": 8
+  },
+  {
+    "id": 266,
+    "name": "Mansura",
+    "parent": 8
+  },
+  {
+    "id": 267,
+    "name": "Manzala",
+    "parent": 8
+  },
+  {
+    "id": 268,
+    "name": "Markaz El Gamaleya",
+    "parent": 8
+  },
+  {
+    "id": 269,
+    "name": "Markaz El Matareya",
+    "parent": 8
+  },
+  {
+    "id": 270,
+    "name": "Minat al-Nasr",
+    "parent": 8
+  },
+  {
+    "id": 271,
+    "name": "Mit Ghamr",
+    "parent": 8
+  },
+  {
+    "id": 272,
+    "name": "Mit Slseel",
+    "parent": 8
+  },
+  {
+    "id": 273,
+    "name": "Nabaruh",
+    "parent": 8
+  },
+  {
+    "id": 274,
+    "name": "New Mansoura",
+    "parent": 8
+  },
+  {
+    "id": 275,
+    "name": "Shirbin",
+    "parent": 8
+  },
+  {
+    "id": 276,
+    "name": "Sinbillawain",
+    "parent": 8
+  },
+  {
+    "id": 277,
+    "name": "Talkha",
+    "parent": 8
+  },
+  {
+    "id": 278,
+    "name": "Tama al-Amdeed",
+    "parent": 8
+  },
+  {
+    "id": 9,
+    "name": "Damietta",
+    "parent": 1
+  },
+  {
+    "id": 279,
+    "name": "Damietta City",
+    "parent": 9
+  },
+  {
+    "id": 280,
+    "name": "Ezbet al-Burj",
+    "parent": 9
+  },
+  {
+    "id": 281,
+    "name": "Fareskour",
+    "parent": 9
+  },
+  {
+    "id": 282,
+    "name": "Kafr al-Bateekh",
+    "parent": 9
+  },
+  {
+    "id": 283,
+    "name": "Kafr Saad",
+    "parent": 9
+  },
+  {
+    "id": 284,
+    "name": "Markaz El Rodah",
+    "parent": 9
+  },
+  {
+    "id": 285,
+    "name": "Mit Abughalb",
+    "parent": 9
+  },
+  {
+    "id": 286,
+    "name": "New Damietta",
+    "parent": 9
+  },
+  {
+    "id": 287,
+    "name": "Ras al-Bar",
+    "parent": 9
+  },
+  {
+    "id": 288,
+    "name": "Saro",
+    "parent": 9
+  },
+  {
+    "id": 289,
+    "name": "Zarqa",
+    "parent": 9
+  },
+  {
+    "id": 10,
+    "name": "Fayoum",
+    "parent": 1
+  },
+  {
+    "id": 290,
+    "name": "Atssa",
+    "parent": 10
+  },
+  {
+    "id": 291,
+    "name": "Fayoum City",
+    "parent": 10
+  },
+  {
+    "id": 292,
+    "name": "Ibshway",
+    "parent": 10
+  },
+  {
+    "id": 293,
+    "name": "New Fayoum",
+    "parent": 10
+  },
+  {
+    "id": 294,
+    "name": "Sinnuras",
+    "parent": 10
+  },
+  {
+    "id": 295,
+    "name": "Tamiya",
+    "parent": 10
+  },
+  {
+    "id": 296,
+    "name": "Yusuf al-Sadiq",
+    "parent": 10
+  },
+  {
+    "id": 11,
+    "name": "Gharbia",
+    "parent": 1
+  },
+  {
+    "id": 297,
+    "name": "Basyoun",
+    "parent": 11
+  },
+  {
+    "id": 298,
+    "name": "Kafr al-Zayat",
+    "parent": 11
+  },
+  {
+    "id": 299,
+    "name": "Mahalla al-Kobra",
+    "parent": 11
+  },
+  {
+    "id": 300,
+    "name": "Qutour",
+    "parent": 11
+  },
+  {
+    "id": 301,
+    "name": "Samanoud",
+    "parent": 11
+  },
+  {
+    "id": 302,
+    "name": "Santa",
+    "parent": 11
+  },
+  {
+    "id": 303,
+    "name": "Tanta",
+    "parent": 11
+  },
+  {
+    "id": 304,
+    "name": "Zefta",
+    "parent": 11
+  },
+  {
+    "id": 12,
+    "name": "Giza",
+    "parent": 1
+  },
+  {
+    "id": 306,
+    "name": "6th of October",
+    "parent": 12
+  },
+  {
+    "id": 307,
+    "name": "Abu Rawash",
+    "parent": 12
+  },
+  {
+    "id": 308,
+    "name": "Agouza",
+    "parent": 12
+  },
+  {
+    "id": 309,
+    "name": "Ard El Lewa",
+    "parent": 12
+  },
+  {
+    "id": 310,
+    "name": "Badrasheen",
+    "parent": 12
+  },
+  {
+    "id": 311,
+    "name": "Baragil",
+    "parent": 12
+  },
+  {
+    "id": 312,
+    "name": "Bashtil",
+    "parent": 12
+  },
+  {
+    "id": 313,
+    "name": "Boulaq Dakrour",
+    "parent": 12
+  },
+  {
+    "id": 314,
+    "name": "Dahab Island and Coldair",
+    "parent": 12
+  },
+  {
+    "id": 315,
+    "name": "Dahshur",
+    "parent": 12
+  },
+  {
+    "id": 316,
+    "name": "Dokki",
+    "parent": 12
+  },
+  {
+    "id": 317,
+    "name": "El Ayyat",
+    "parent": 12
+  },
+  {
+    "id": 318,
+    "name": "Faisal",
+    "parent": 12
+  },
+  {
+    "id": 319,
+    "name": "Giza District",
+    "parent": 12
+  },
+  {
+    "id": 320,
+    "name": "Hadayek 6th of October",
+    "parent": 12
+  },
+  {
+    "id": 321,
+    "name": "Hadayek al-Ahram",
+    "parent": 12
+  },
+  {
+    "id": 322,
+    "name": "Haram",
+    "parent": 12
+  },
+  {
+    "id": 323,
+    "name": "Hawamdeya",
+    "parent": 12
+  },
+  {
+    "id": 324,
+    "name": "Imbaba",
+    "parent": 12
+  },
+  {
+    "id": 325,
+    "name": "Kerdasa",
+    "parent": 12
+  },
+  {
+    "id": 326,
+    "name": "Kit Kat",
+    "parent": 12
+  },
+  {
+    "id": 327,
+    "name": "Manial Shiha",
+    "parent": 12
+  },
+  {
+    "id": 328,
+    "name": "Mansuriyya",
+    "parent": 12
+  },
+  {
+    "id": 329,
+    "name": "Markaz al-Giza",
+    "parent": 12
+  },
+  {
+    "id": 330,
+    "name": "Maryotaya",
+    "parent": 12
+  },
+  {
+    "id": 331,
+    "name": "Mohandessin",
+    "parent": 12
+  },
+  {
+    "id": 332,
+    "name": "Moneeb",
+    "parent": 12
+  },
+  {
+    "id": 333,
+    "name": "Nahia",
+    "parent": 12
+  },
+  {
+    "id": 334,
+    "name": "Oseem",
+    "parent": 12
+  },
+  {
+    "id": 335,
+    "name": "Saf",
+    "parent": 12
+  },
+  {
+    "id": 336,
+    "name": "Saft El Laban",
+    "parent": 12
+  },
+  {
+    "id": 337,
+    "name": "Sheikh Zayed",
+    "parent": 12
+  },
+  {
+    "id": 338,
+    "name": "Tersa",
+    "parent": 12
+  },
+  {
+    "id": 339,
+    "name": "Warraq",
+    "parent": 12
+  },
+  {
+    "id": 340,
+    "name": "West Somid",
+    "parent": 12
+  },
+  {
+    "id": 13,
+    "name": "Ismailia",
+    "parent": 1
+  },
+  {
+    "id": 342,
+    "name": "Abu Swear",
+    "parent": 13
+  },
+  {
+    "id": 343,
+    "name": "Fayed",
+    "parent": 13
+  },
+  {
+    "id": 344,
+    "name": "Ismailia City",
+    "parent": 13
+  },
+  {
+    "id": 345,
+    "name": "Kantara East",
+    "parent": 13
+  },
+  {
+    "id": 346,
+    "name": "Kantara West",
+    "parent": 13
+  },
+  {
+    "id": 347,
+    "name": "Qassaseen",
+    "parent": 13
+  },
+  {
+    "id": 348,
+    "name": "Tal al-Kebeer",
+    "parent": 13
+  },
+  {
+    "id": 14,
+    "name": "Kafr al-Sheikh",
+    "parent": 1
+  },
+  {
+    "id": 350,
+    "name": "Baltim",
+    "parent": 14
+  },
+  {
+    "id": 351,
+    "name": "Bella",
+    "parent": 14
+  },
+  {
+    "id": 352,
+    "name": "Brolos",
+    "parent": 14
+  },
+  {
+    "id": 353,
+    "name": "Desouk",
+    "parent": 14
+  },
+  {
+    "id": 354,
+    "name": "Fouh",
+    "parent": 14
+  },
+  {
+    "id": 355,
+    "name": "Hamoul",
+    "parent": 14
+  },
+  {
+    "id": 356,
+    "name": "Kafr al-Sheikh City",
+    "parent": 14
+  },
+  {
+    "id": 357,
+    "name": "Motobas",
+    "parent": 14
+  },
+  {
+    "id": 358,
+    "name": "Qaleen",
+    "parent": 14
+  },
+  {
+    "id": 359,
+    "name": "Riyadh",
+    "parent": 14
+  },
+  {
+    "id": 360,
+    "name": "Sidi Salem",
+    "parent": 14
+  },
+  {
+    "id": 15,
+    "name": "Luxor",
+    "parent": 1
+  },
+  {
+    "id": 362,
+    "name": "Armant",
+    "parent": 15
+  },
+  {
+    "id": 363,
+    "name": "Bayadeya",
+    "parent": 15
+  },
+  {
+    "id": 364,
+    "name": "Isna",
+    "parent": 15
+  },
+  {
+    "id": 365,
+    "name": "Luxor City",
+    "parent": 15
+  },
+  {
+    "id": 366,
+    "name": "Qurna",
+    "parent": 15
+  },
+  {
+    "id": 367,
+    "name": "Tod",
+    "parent": 15
+  },
+  {
+    "id": 368,
+    "name": "Zinnia",
+    "parent": 15
+  },
+  {
+    "id": 16,
+    "name": "Matruh",
+    "parent": 1
+  },
+  {
+    "id": 370,
+    "name": "Alamein",
+    "parent": 16
+  },
+  {
+    "id": 371,
+    "name": "Barany",
+    "parent": 16
+  },
+  {
+    "id": 372,
+    "name": "Dabaa",
+    "parent": 16
+  },
+  {
+    "id": 373,
+    "name": "Hammam",
+    "parent": 16
+  },
+  {
+    "id": 374,
+    "name": "Marsa Matrouh",
+    "parent": 16
+  },
+  {
+    "id": 375,
+    "name": "Nagela",
+    "parent": 16
+  },
+  {
+    "id": 376,
+    "name": "North Coast",
+    "parent": 16
+  },
+  {
+    "id": 377,
+    "name": "Salloum",
+    "parent": 16
+  },
+  {
+    "id": 378,
+    "name": "Siwa",
+    "parent": 16
+  },
+  {
+    "id": 17,
+    "name": "Minya",
+    "parent": 1
+  },
+  {
+    "id": 380,
+    "name": "Abu Qurqas",
+    "parent": 17
+  },
+  {
+    "id": 381,
+    "name": "Adwa",
+    "parent": 17
+  },
+  {
+    "id": 382,
+    "name": "Beni Mazar",
+    "parent": 17
+  },
+  {
+    "id": 383,
+    "name": "Deir Mawas",
+    "parent": 17
+  },
+  {
+    "id": 384,
+    "name": "Maghagha",
+    "parent": 17
+  },
+  {
+    "id": 385,
+    "name": "Malawi",
+    "parent": 17
+  },
+  {
+    "id": 386,
+    "name": "Matay",
+    "parent": 17
+  },
+  {
+    "id": 387,
+    "name": "Minya City",
+    "parent": 17
+  },
+  {
+    "id": 388,
+    "name": "New Minya",
+    "parent": 17
+  },
+  {
+    "id": 389,
+    "name": "Samalut",
+    "parent": 17
+  },
+  {
+    "id": 18,
+    "name": "Monufia",
+    "parent": 1
+  },
+  {
+    "id": 391,
+    "name": "Ashmon",
+    "parent": 18
+  },
+  {
+    "id": 392,
+    "name": "Bagour",
+    "parent": 18
+  },
+  {
+    "id": 393,
+    "name": "Berket al-Sabaa",
+    "parent": 18
+  },
+  {
+    "id": 394,
+    "name": "Menouf",
+    "parent": 18
+  },
+  {
+    "id": 395,
+    "name": "Quesna",
+    "parent": 18
+  },
+  {
+    "id": 396,
+    "name": "Sadat",
+    "parent": 18
+  },
+  {
+    "id": 397,
+    "name": "Sers al-Lyan",
+    "parent": 18
+  },
+  {
+    "id": 398,
+    "name": "Shebin al-Koum",
+    "parent": 18
+  },
+  {
+    "id": 399,
+    "name": "Shohadaa",
+    "parent": 18
+  },
+  {
+    "id": 400,
+    "name": "Tala",
+    "parent": 18
+  },
+  {
+    "id": 19,
+    "name": "New Valley",
+    "parent": 1
+  },
+  {
+    "id": 402,
+    "name": "Balat",
+    "parent": 19
+  },
+  {
+    "id": 403,
+    "name": "Dakhla",
+    "parent": 19
+  },
+  {
+    "id": 404,
+    "name": "Farafra",
+    "parent": 19
+  },
+  {
+    "id": 405,
+    "name": "Kharga",
+    "parent": 19
+  },
+  {
+    "id": 406,
+    "name": "Mut",
+    "parent": 19
+  },
+  {
+    "id": 407,
+    "name": "Paris",
+    "parent": 19
+  },
+  {
+    "id": 20,
+    "name": "North Sinai",
+    "parent": 1
+  },
+  {
+    "id": 409,
+    "name": "Arish",
+    "parent": 20
+  },
+  {
+    "id": 410,
+    "name": "Bir al-Abed",
+    "parent": 20
+  },
+  {
+    "id": 411,
+    "name": "Hasana",
+    "parent": 20
+  },
+  {
+    "id": 412,
+    "name": "Nakhl",
+    "parent": 20
+  },
+  {
+    "id": 413,
+    "name": "Rafah",
+    "parent": 20
+  },
+  {
+    "id": 414,
+    "name": "Sheikh Zoweyd",
+    "parent": 20
+  },
+  {
+    "id": 21,
+    "name": "Port Said",
+    "parent": 1
+  },
+  {
+    "id": 416,
+    "name": "Arab District",
+    "parent": 21
+  },
+  {
+    "id": 417,
+    "name": "Dawahy District",
+    "parent": 21
+  },
+  {
+    "id": 418,
+    "name": "Ganoub District",
+    "parent": 21
+  },
+  {
+    "id": 419,
+    "name": "Manakh District",
+    "parent": 21
+  },
+  {
+    "id": 420,
+    "name": "Port Fouad",
+    "parent": 21
+  },
+  {
+    "id": 421,
+    "name": "Sharq District",
+    "parent": 21
+  },
+  {
+    "id": 422,
+    "name": "Zohour District",
+    "parent": 21
+  },
+  {
+    "id": 22,
+    "name": "Qalyubia",
+    "parent": 1
+  },
+  {
+    "id": 424,
+    "name": "Bahtim",
+    "parent": 22
+  },
+  {
+    "id": 425,
+    "name": "Banha",
+    "parent": 22
+  },
+  {
+    "id": 426,
+    "name": "Kafr Shukr",
+    "parent": 22
+  },
+  {
+    "id": 427,
+    "name": "Khanka",
+    "parent": 22
+  },
+  {
+    "id": 428,
+    "name": "Khosous",
+    "parent": 22
+  },
+  {
+    "id": 429,
+    "name": "Musturad",
+    "parent": 22
+  },
+  {
+    "id": 430,
+    "name": "Qaha",
+    "parent": 22
+  },
+  {
+    "id": 431,
+    "name": "Qalyub",
+    "parent": 22
+  },
+  {
+    "id": 432,
+    "name": "Qanater al-Khairia",
+    "parent": 22
+  },
+  {
+    "id": 433,
+    "name": "Shebin al-Qanater",
+    "parent": 22
+  },
+  {
+    "id": 434,
+    "name": "Shubra al-Khaimah",
+    "parent": 22
+  },
+  {
+    "id": 435,
+    "name": "Tookh",
+    "parent": 22
+  },
+  {
+    "id": 23,
+    "name": "Qena",
+    "parent": 1
+  },
+  {
+    "id": 437,
+    "name": "Abu Tisht",
+    "parent": 23
+  },
+  {
+    "id": 438,
+    "name": "Dishna",
+    "parent": 23
+  },
+  {
+    "id": 439,
+    "name": "Farshout",
+    "parent": 23
+  },
+  {
+    "id": 440,
+    "name": "Keft",
+    "parent": 23
+  },
+  {
+    "id": 441,
+    "name": "Nag Hammadi",
+    "parent": 23
+  },
+  {
+    "id": 442,
+    "name": "Nakada",
+    "parent": 23
+  },
+  {
+    "id": 443,
+    "name": "Qena City",
+    "parent": 23
+  },
+  {
+    "id": 444,
+    "name": "Quos",
+    "parent": 23
+  },
+  {
+    "id": 445,
+    "name": "Wakf",
+    "parent": 23
+  },
+  {
+    "id": 24,
+    "name": "Red Sea",
+    "parent": 1
+  },
+  {
+    "id": 447,
+    "name": "Gouna",
+    "parent": 24
+  },
+  {
+    "id": 448,
+    "name": "Halayeb & Shalateen",
+    "parent": 24
+  },
+  {
+    "id": 449,
+    "name": "Hurghada",
+    "parent": 24
+  },
+  {
+    "id": 450,
+    "name": "Marsa Alam",
+    "parent": 24
+  },
+  {
+    "id": 451,
+    "name": "Qusair",
+    "parent": 24
+  },
+  {
+    "id": 452,
+    "name": "Ras Gharib",
+    "parent": 24
+  },
+  {
+    "id": 453,
+    "name": "Safaga",
+    "parent": 24
+  },
+  {
+    "id": 454,
+    "name": "Sahl Hasheesh",
+    "parent": 24
+  },
+  {
+    "id": 25,
+    "name": "Sharqia",
+    "parent": 1
+  },
+  {
+    "id": 456,
+    "name": "10th of Ramadan",
+    "parent": 25
+  },
+  {
+    "id": 457,
+    "name": "Abu Hammad",
+    "parent": 25
+  },
+  {
+    "id": 458,
+    "name": "Abu Kabir",
+    "parent": 25
+  },
+  {
+    "id": 459,
+    "name": "Alqnayat",
+    "parent": 25
+  },
+  {
+    "id": 460,
+    "name": "Awlad Saqr",
+    "parent": 25
+  },
+  {
+    "id": 461,
+    "name": "Bilbeis",
+    "parent": 25
+  },
+  {
+    "id": 462,
+    "name": "Deyerb Negm",
+    "parent": 25
+  },
+  {
+    "id": 463,
+    "name": "Faqous",
+    "parent": 25
+  },
+  {
+    "id": 464,
+    "name": "Hihya",
+    "parent": 25
+  },
+  {
+    "id": 465,
+    "name": "Husseiniya",
+    "parent": 25
+  },
+  {
+    "id": 466,
+    "name": "Ibrahemyah",
+    "parent": 25
+  },
+  {
+    "id": 467,
+    "name": "Kafr Saqr",
+    "parent": 25
+  },
+  {
+    "id": 468,
+    "name": "Mashtool al-Souk",
+    "parent": 25
+  },
+  {
+    "id": 469,
+    "name": "Minya al-Qamh",
+    "parent": 25
+  },
+  {
+    "id": 470,
+    "name": "New Salhia",
+    "parent": 25
+  },
+  {
+    "id": 471,
+    "name": "Qareen",
+    "parent": 25
+  },
+  {
+    "id": 472,
+    "name": "Zagazig",
+    "parent": 25
+  },
+  {
+    "id": 26,
+    "name": "Sohag",
+    "parent": 1
+  },
+  {
+    "id": 474,
+    "name": "Akhmim",
+    "parent": 26
+  },
+  {
+    "id": 475,
+    "name": "Alasirat",
+    "parent": 26
+  },
+  {
+    "id": 476,
+    "name": "Baliana",
+    "parent": 26
+  },
+  {
+    "id": 477,
+    "name": "Girga",
+    "parent": 26
+  },
+  {
+    "id": 478,
+    "name": "Maragha",
+    "parent": 26
+  },
+  {
+    "id": 479,
+    "name": "Markaz Dar El Salam",
+    "parent": 26
+  },
+  {
+    "id": 480,
+    "name": "Markaz Juhaynah",
+    "parent": 26
+  },
+  {
+    "id": 481,
+    "name": "Markaz Sohag",
+    "parent": 26
+  },
+  {
+    "id": 482,
+    "name": "Monsha'a",
+    "parent": 26
+  },
+  {
+    "id": 483,
+    "name": "New Sohag",
+    "parent": 26
+  },
+  {
+    "id": 484,
+    "name": "Sakaltah",
+    "parent": 26
+  },
+  {
+    "id": 485,
+    "name": "Tahta",
+    "parent": 26
+  },
+  {
+    "id": 486,
+    "name": "Tama",
+    "parent": 26
+  },
+  {
+    "id": 27,
+    "name": "South Sinai",
+    "parent": 1
+  },
+  {
+    "id": 488,
+    "name": "Abu Rudeis",
+    "parent": 27
+  },
+  {
+    "id": 489,
+    "name": "Abu Zenimah",
+    "parent": 27
+  },
+  {
+    "id": 490,
+    "name": "Dahab",
+    "parent": 27
+  },
+  {
+    "id": 491,
+    "name": "Nuweiba",
+    "parent": 27
+  },
+  {
+    "id": 492,
+    "name": "Ras Sedr",
+    "parent": 27
+  },
+  {
+    "id": 493,
+    "name": "Sharm al-Sheikh",
+    "parent": 27
+  },
+  {
+    "id": 494,
+    "name": "St. Catherine",
+    "parent": 27
+  },
+  {
+    "id": 495,
+    "name": "Taba",
+    "parent": 27
+  },
+  {
+    "id": 496,
+    "name": "Tor Sinai",
+    "parent": 27
+  },
+  {
+    "id": 28,
+    "name": "Suez",
+    "parent": 1
+  },
+  {
+    "id": 498,
+    "name": "Ain Sukhna",
+    "parent": 28
+  },
+  {
+    "id": 499,
+    "name": "Arbaeen",
+    "parent": 28
+  },
+  {
+    "id": 500,
+    "name": "Attaka",
+    "parent": 28
+  },
+  {
+    "id": 501,
+    "name": "Faisal District",
+    "parent": 28
+  },
+  {
+    "id": 502,
+    "name": "Ganayen",
+    "parent": 28
+  },
+  {
+    "id": 503,
+    "name": "Suez District",
+    "parent": 28
+  }
+]
