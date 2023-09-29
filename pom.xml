@@ -99,14 +99,36 @@
 		</dependency>
 	</dependencies>
 
+
+
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>2.5.0</version>
+				<configuration>
+					<to>
+						<image>registry.hub.docker.com/mshzidan/olx-image</image>
+						<auth>
+							<username>mshzidan</username>
+							<password>123123aAb</password>
+						</auth>
+					</to>
+
+
+				</configuration>
+			</plugin>
 		</plugins>
 
+
+
 	</build>
+
+
 
 </project>
