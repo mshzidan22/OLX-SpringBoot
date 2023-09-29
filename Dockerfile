@@ -5,5 +5,5 @@ COPY pom.xml .
 COPY .mvn .mvn
 COPY src src
 RUN mvn package clean package
-COPY target/${JAR_FILE} /usr/share/${JAR_FILE}
+COPY /app/target/*.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
