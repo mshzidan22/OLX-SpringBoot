@@ -8,4 +8,5 @@ RUN mvn -f /home/app/pom.xml clean package
 #
 FROM maven:3.6.3-jdk-8
 COPY --from=build /home/app/target/olx-0.0.1-SNAPSHOT.jar  /usr/local/lib/olx.jar
-ENTRYPOINT ["java","-Xmx500m","-jar","/usr/local/lib/olx.jar"]
+EXPOSE 8080
+ENTRYPOINT ["java","-Xmx350m","-jar","/usr/local/lib/olx.jar"]
