@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
+import java.util.List;
+
 @Data
 public class UpdatedAdDto {
     @NotNull
@@ -19,6 +21,6 @@ public class UpdatedAdDto {
     private String condition;
     @Positive(message = "Price should be more than 0 $")
     private Integer price;
-    private ArrayList<String> images = new ArrayList<>();
+    private List<String> images = new ArrayList<>();
 
 }

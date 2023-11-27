@@ -2,7 +2,7 @@ package com.olx.converter;
 
 import com.olx.assemblers.AdModelAssembler;
 import com.olx.dto.AdDto;
-import com.olx.dto.AdInputDto;
+import com.olx.dto.AdCreationDto;
 import com.olx.dto.AdUserDto;
 import com.olx.dto.MiniAdDto;
 import com.olx.model.Ad;
@@ -82,20 +82,20 @@ public class AdConverter  {
     }
 
     @SneakyThrows
-    public Ad adInputDtoToAd(AdInputDto adInputDto){
+    public Ad adCreationDtoToAd(AdCreationDto adCreationDto){
         Ad ad = new Ad();
         Set<Img> imgs = new HashSet<>();
-        ad.setTitle(adInputDto.getTitle());
-        ad.setDescription(adInputDto.getDescription());
-        ad.setBrand(adInputDto.getBrand());
-        ad.setPrice(adInputDto.getPrice());
+        ad.setTitle(adCreationDto.getTitle());
+        ad.setDescription(adCreationDto.getDescription());
+        ad.setBrand(adCreationDto.getBrand());
+        ad.setPrice(adCreationDto.getPrice());
         ad.setTime(LocalDateTime.now());
-        ad.setCondition(adInputDto.getCondition());
-        adInputDto.getImages().forEach((i)->imgs.add(new Img(i)));
+        ad.setCondition(adCreationDto.getCondition());
+        adCreationDto.getImages().forEach((i)->imgs.add(new Img()));
         ad.setImages(imgs);
-        ad.setCategory(categoryService.getCatById(adInputDto.getCategoryId()));
-        ad.setLocation(locationService.getLocationById(adInputDto.getLocationId()));
-        ad.setAdvertiser(accountService.getAccountByEmail(adInputDto.getEmail()).get().getAdvertiser());
+        ad.setCategory(categoryService.getCatById(adCreationDto.getCategoryId()));
+        ad.setLocation(locationService.getLocationById(adCreationDto.getLocationId()));
+        ad.setAdvertiser(accountService.getAccountByEmail(adCreationDto.getEmail()).get().getAdvertiser());
 
       return ad;
 

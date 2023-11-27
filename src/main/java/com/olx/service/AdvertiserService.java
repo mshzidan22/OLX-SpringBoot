@@ -1,6 +1,6 @@
 package com.olx.service;
 
-import com.olx.dto.AccountDto;
+import com.olx.dto.AccountRegistrationDto;
 import com.olx.execption.DuplicateEmailException;
 import com.olx.model.Account;
 import com.olx.model.Advertiser;
@@ -16,17 +16,17 @@ public class AdvertiserService {
     @Autowired
     private AccountRepository accountRepository;
 
-    public Advertiser saveAdvertiser (AccountDto accountDto){
-        if(accountRepository.findByEmail(accountDto.getEmail()).isPresent()){
-            throw new DuplicateEmailException("DuplicateEmailException");
+    public Advertiser saveAdvertiser (AccountRegistrationDto accountRegistrationDto){
+        if(accountRepository.findByEmail(accountRegistrationDto.getEmail()).isPresent()){
+            throw new DuplicateEmailException("Duplicate Email ");
         }
         Account account = new Account();
-        account.setEmail(accountDto.getEmail());
-        account.setPassword(accountDto.getPassword());
+        account.setEmail(accountRegistrationDto.getEmail());
+        account.setPassword(accountRegistrationDto.getPassword());
         Advertiser advertiser = new Advertiser();
         advertiser.setAccount(account);
-        advertiser.setName(accountDto.getName());
-        advertiser.setPhone(accountDto.getPhone());
+        advertiser.setName(accountRegistrationDto.getName());
+        advertiser.setPhone(accountRegistrationDto.getPhone());
      return    advertiserRepository.save(advertiser);
     }
 

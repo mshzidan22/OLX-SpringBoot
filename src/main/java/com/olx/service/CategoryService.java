@@ -30,7 +30,7 @@ public class CategoryService {
         return catRepo.findById(id).orElseThrow(()-> new CategoryNotFoundException("Category Not Found"));
     }
     public Category getCategoryByNameAndParent(String name,Long parent){
-        //make excetion notfound
+
         return catRepo.findByNameIgnoreCaseAndParent(name,parent).orElseThrow(() -> new CategoryNotFoundException("Category Not Found"));
     }
 

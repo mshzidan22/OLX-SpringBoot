@@ -29,16 +29,9 @@ public class LocationService {
     }
 
     public Location getLocationByName(String name){
-        // need to throw custom excption
         return locRepo.findByNameIgnoreCase(name).orElseThrow(()-> new LocationNotFoundException("Location not found"));
     }
 
-
-    public Page<EntityModel<MiniAdDto>> getAdByLocation (Long locationId , Pageable pageable){
-       //may be error here
-
-        return  adRepo.findByLocationId(locationId,pageable).map(adConverter::entityToEntityModel);
-    }
 
     public Page<EntityModel<MiniAdDto>>  getAdsByLocation (String location , Pageable pageable){
         Location loc = getLocationByName(location);

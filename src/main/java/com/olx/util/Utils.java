@@ -109,7 +109,7 @@ public class Utils {
         List<Long> childrenIdsList = new ArrayList<>();
         //need to be relative path
         CategoryJson[] categories = objectMapper.readValue(
-                new File("C:\\Users\\mshzidanPC\\spring_boot\\olx\\src\\main\\resources\\static\\json_files\\category.json"),
+                new File("static/json_files/category.json"),
                 CategoryJson[].class);
 
         for (CategoryJson c : categories) {
@@ -131,7 +131,7 @@ public class Utils {
     public List<Long> getLocationAllChildren(Long locationId) throws IOException {
         List<Long> childrenIdsList = new ArrayList<>();
         LocationJson[] locations = objectMapper.readValue(
-                new File("C:\\Users\\mshzidanPC\\spring_boot\\olx\\src\\main\\resources\\static\\json_files\\location.json"),
+                new File("static/json_files/location.json"),
                 LocationJson[].class);
         for (LocationJson l : locations) {
             if (l.getParent().equals(locationId)) {
@@ -151,13 +151,4 @@ public class Utils {
     }
 
 
-
-//    public Location getLocationById (Long locId) throws IOException {
-//        LocationJson[] locations = objectMapper.readValue(
-//                new File("C:\\Users\\mshzidanPC\\spring_boot\\olx\\src\\main\\resources\\static\\json_files\\location.json"),
-//                LocationJson[].class);
-//
-//        LocationJson lj =   Arrays.stream(locations).filter(l -> l.getId().equals(locId)).findFirst().orElseThrow(() -> new LocationNotFoundException("no location"));
-//         return lj.toLocation();
-//    }
 }

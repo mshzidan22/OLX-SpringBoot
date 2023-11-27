@@ -20,7 +20,7 @@ public class Category {
     private String name;
     private Long parent;
     @OneToMany(mappedBy = "category")
-    private Set<Ad> ads = new HashSet<Ad>();
+    private Set<Ad> ads;
 
     public int getCategoryLevel(){
         int[] lv1Category = {6,14,17,20,100,129,138,147,206,223,230,241};

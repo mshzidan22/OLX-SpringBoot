@@ -10,6 +10,7 @@ import org.hibernate.annotations.*;
 import javax.persistence.*;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
@@ -27,8 +28,10 @@ public class Ad {
     @Column(name = "AD_ID")
     private Long id;
     @Column(nullable = false)
+    @NotBlank
     private String title;
     @Column(nullable = false, length = 4096)
+    @NotBlank
     private String description;
     private Long views;
     private String condition;
@@ -45,7 +48,6 @@ public class Ad {
     @JoinColumn(name = "ADVERTISER_ID")
     private Advertiser advertiser;
     @ManyToMany(mappedBy = "saved")
-
     private Set<Advertiser> savedBy = new HashSet<>();
     @ElementCollection
     @JoinColumn(name = "AD_ID")

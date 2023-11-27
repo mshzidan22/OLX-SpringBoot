@@ -9,6 +9,7 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,9 +21,10 @@ public class Advertiser {
     @GeneratedValue
     @Column(name = "ADVERTISER_ID")
     private Long id;
+    @NotBlank
     private String name;
     private String phone;
-    @OneToMany(mappedBy = "advertiser",cascade = CascadeType.REMOVE)
+    @OneToMany(mappedBy = "advertiser",orphanRemoval = true)
     private Set<Ad> ads = new HashSet<>();
     @ManyToMany(cascade = {CascadeType.DETACH ,CascadeType.PERSIST })
     @JoinTable(name = "SAVED_ADS",joinColumns = { @JoinColumn(name = "ADVERTISER_ID") },

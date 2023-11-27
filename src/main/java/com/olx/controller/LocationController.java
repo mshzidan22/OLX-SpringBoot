@@ -29,10 +29,6 @@ public class LocationController {
 
     @GetMapping("/location/{locationName}")
     public ResponseEntity<PagedModel<MiniAdDto>> getAdByLocation (@PathVariable String locationName, Pageable pageable){
-        //Location location =locationService.getLocationIdByName(locationName);
-
-
-        //Page<EntityModel<MiniAdDto>> adDtoPage = locationService.getAdByLocation(location.getId(),pageable);
         Page<EntityModel<MiniAdDto>> adDtoPage =locationService.getAdsByLocation(locationName,pageable);
         PagedModel pagedModel = pagedResourcesAssembler.toModel(adDtoPage);
         return new ResponseEntity<>(pagedModel, HttpStatus.OK);

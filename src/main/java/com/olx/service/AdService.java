@@ -29,7 +29,7 @@ public class AdService {
     public AdDto getAd(Long id) {
 
         Ad ad = adRepo.findById(id).orElseThrow(()-> new AdNotFoundException("Ad not found with id = "+id));
-        if(ad.getViews() == null) ad.setViews(new Long(0));
+        // need to be batched
         ad.setViews(ad.getViews()+1);
         Ad ad1=saveAd(ad);
         return adConverter.entityToDto(ad1);

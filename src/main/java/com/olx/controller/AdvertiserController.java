@@ -1,6 +1,6 @@
 package com.olx.controller;
 
-import com.olx.dto.AccountDto;
+import com.olx.dto.AccountRegistrationDto;
 import com.olx.execption.IncorrectUserOrPassException;
 import com.olx.model.Advertiser;
 import com.olx.security.AuthenRequest;
@@ -38,8 +38,8 @@ public class AdvertiserController {
 
 
     @PostMapping("/register")
-    public ResponseEntity<Advertiser> createAccount (@RequestBody @Valid AccountDto accountDto){
-       Advertiser advertiser =advertiserService.saveAdvertiser(accountDto);
+    public ResponseEntity<Advertiser> createAccount (@RequestBody @Valid AccountRegistrationDto accountRegistrationDto){
+       Advertiser advertiser =advertiserService.saveAdvertiser(accountRegistrationDto);
         return new ResponseEntity<>(advertiser,HttpStatus.CREATED);
     }
 

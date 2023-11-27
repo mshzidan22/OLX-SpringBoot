@@ -9,7 +9,6 @@ import javax.persistence.Embeddable;
 import javax.persistence.Lob;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 @Embeddable
 public class Img {

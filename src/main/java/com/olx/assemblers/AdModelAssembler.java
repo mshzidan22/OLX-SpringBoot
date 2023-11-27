@@ -4,17 +4,12 @@ import com.olx.controller.*;
 import com.olx.dto.AdDto;
 import com.olx.dto.AdUserDto;
 import com.olx.dto.MiniAdDto;
-import com.olx.model.Account;
-import com.olx.model.Advertiser;
 import lombok.SneakyThrows;
 import org.springframework.data.domain.Pageable;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
-import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -31,7 +26,7 @@ public class AdModelAssembler {
     public EntityModel<AdDto> toModel(AdDto adDto)  {
         Pageable page = null;
         return EntityModel.of(adDto,
-                linkTo(methodOn(AdController.class).oneAd(adDto.getId())).withSelfRel(),
+                linkTo(methodOn(AdController.class).getAd(adDto.getId())).withSelfRel(),
                 linkTo(methodOn(AdController.class).all()).withRel("ads"),
                 linkTo(methodOn(LocationController.class).getAdByLocation(adDto.getCity(),page)).withRel("city"),
                 linkTo(methodOn(LocationController.class).getAdByLocation(adDto.getGov(),page)).withRel("gov"),
@@ -43,10 +38,9 @@ public class AdModelAssembler {
 
     }
 
-    //need to add other links
     public static EntityModel<MiniAdDto> MiniToModel(MiniAdDto miniAdDto) {
         return EntityModel.of(miniAdDto,
-                linkTo(methodOn(AdController.class).oneAd(miniAdDto.getId())).withSelfRel(),
+                linkTo(methodOn(AdController.class).getAd(miniAdDto.getId())).withSelfRel(),
                 linkTo(methodOn(AdController.class).all()).withRel("ads")
         );
     }
@@ -62,10 +56,10 @@ public class AdModelAssembler {
     }
 
 
-     // need more for delete and update
+
     public EntityModel<AdUserDto> toAdUserDtoModel (AdUserDto adUserDto){
          return EntityModel.of(adUserDto,
-                linkTo(methodOn(AdController.class).oneAd(adUserDto.getId())).withSelfRel(),
+                linkTo(methodOn(AdController.class).getAd(adUserDto.getId())).withSelfRel(),
                 linkTo(methodOn(AccountController.class).deleteAd(adUserDto.getId())).withRel("delete")
 
          );

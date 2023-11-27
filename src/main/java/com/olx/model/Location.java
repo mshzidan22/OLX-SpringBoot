@@ -19,5 +19,5 @@ public class Location {
     private String name;
     private Long parent;
     @OneToMany(mappedBy = "location")
-    private Set<Ad> ads = new HashSet<Ad>();
+    private Set<Ad> ads;
 }

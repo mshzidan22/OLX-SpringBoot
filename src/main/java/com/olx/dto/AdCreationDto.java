@@ -5,8 +5,10 @@ import lombok.Data;
 
 import javax.validation.constraints.*;
 import java.util.ArrayList;
+import java.util.List;
+
 @Data
-public class AdInputDto {
+public class AdCreationDto {
     @NotNull
     @Size(min = 5,max = 80 ,message = "Title must be more than 5 and less than 80 Chars")
     private String title;
@@ -18,7 +20,7 @@ public class AdInputDto {
     private String condition;
     @Positive(message = "Price should be more than 0 $")
     private Integer price;
-    private ArrayList<String> images = new ArrayList<>();
+    private List<String> images = new ArrayList<>();
     @NotNull(message = "You should Put the Location Id")
     @Positive(message = "LocationId should be positive")
     private Long locationId;
@@ -29,9 +31,9 @@ public class AdInputDto {
     @Size(min = 4 , max = 20 , message = "name should not exceed 20 char")
     private String name;
     @NotNull
-    @javax.validation.constraints.Email
+    @Email(message = "Invalid email format")
     private String email;
     @NotNull
-    @Digits(integer = 10,fraction = 0)
+    @Digits(integer = 10, fraction = 0, message = "Invalid phone number format")
     private String phone;
 }
