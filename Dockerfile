@@ -1,4 +1,4 @@
-FROM maven:3.9.5-jdk-8 AS build
+FROM maven:3.8.6-openjdk-8-slim AS build
 COPY . .
 RUN mvn clean package -Pprod -DskipTests
 FROM openjdk:8-jdk-slim
