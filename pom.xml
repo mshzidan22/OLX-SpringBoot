@@ -14,8 +14,7 @@
 	<name>olx</name>
 	<description>OLX project with Spring Boot</description>
 	<properties>
-		    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+<version>11</version>
 	</properties>
 	
 
